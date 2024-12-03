@@ -8,6 +8,7 @@ body{
 header{
     display: flex;
     background-color: white;
+    
 }
 nav{
     background-color: #ffffff;
@@ -15,11 +16,17 @@ nav{
     display: flex;
     margin-left: auto;
     justify-content: space-between;
+    margin-top: 15px; /* Move o menu de navegação para baixo */
 }
+
+.logo{
+    margin-left: 30px;
+}
+
 li{
     list-style: none;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 50px;
 }
 a{
     color:black;
@@ -32,12 +39,66 @@ img{
 }
 .botao-area-aluno{
     padding: 5px;
-    border: 1px solid #6A00FF;
+    border: 1px solid #4C1FB0;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .botao-area-aluno:hover{
-    background-color: aqua;
+    background-color: #4C1FB0;
     transition: 0.8s;
+}
+
+main{
+    padding-top: 150px;
+    padding-left: 50px;
+    color:white
+}
+
+section h1 {
+    font-size: 52px; /* Ajuste o tamanho da fonte para o título */
+   /* line-height: 1.4;  Para melhorar o espaçamento */
+   font-family: 'Arial';
+}
+
+article p {
+    font-size: 24px; /* Ajuste o tamanho da fonte para o parágrafo */
+    line-height: 1.6; /* Para melhorar o espaçamento */
+  padding-left: 40px;
+  padding-top: 60px;
+  font-family: 'Fira Code', arial;
+}
+
+.placeholder{
+    padding-left: 800px; /* Se precisar manter o alinhamento horizontal */
+    position: relative; /* Habilita o ajuste com `top` */
+    top: -370px;
+}
+
+/* Ajusta a largura da imagem */
+picture img {
+    width: 500px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.with-image img {
+    width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.with-image .nota {
+    position: absolute; /* Permite posicionar o texto sobre a imagem */
+    top: 1300px; /* Alinha verticalmente ao centro */
+    left: 50%; /* Alinha horizontalmente ao centro */
+    transform: translate(-50%, -50%); /* Centraliza o texto completamente */
+    color: white; /* Ajuste a cor do texto para ser visível */
+    font-size: 26px; /* Ajuste o tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere a fonte se necessário */
+    padding: 20px; /* Adiciona espaço ao redor do texto */
+   /* background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido (opcional) */
+   /* border-radius: 10px; /* Bordas arredondadas no fundo (opcional) */
+}
+
+.oficina{
+    padding-left: 600px;
 }
