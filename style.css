@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #5856D6;
+    background-color: #4C1FB0;
 }
 header{
     display: flex;
@@ -101,4 +101,122 @@ picture img {
 
 .oficina{
     padding-left: 600px;
+}
+
+.divpai{
+    background-color: white; /* Fundo branco atrás dos contêineres */
+    width: 100%; /* Ajuste a largura geral */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar para a linha seguinte */
+    gap: 100px; /* Espaço entre os contêineres */
+   /* padding: 1000px;
+    /*justify-content: space-around; /* Distribui os contêineres */
+}
+
+.container1 {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
+    width: 495px; /* Largura de cada contêiner */
+    height: 522px; /* Altura de cada contêiner */
+    display: flex;
+   /* justify-content: center; */
+   /* align-items: center; */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.container1 h3 {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere para outra fonte, se quiser */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.container1 p {
+    font-size: 25px; /* Tamanho da fonte do parágrafo */
+    font-family: 'Verdana', sans-serif; /* Fonte para o parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    text-align: justify; /* Alinha o texto para melhor legibilidade */
+}
+
+.container2 {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9);
+    width: 495px; /* Largura de cada contêiner */
+    height: 522px; /* Altura de cada contêiner */
+    display: flex;
+   /* justify-content: center; */
+   /* align-items: center; */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-top: 100px;
+}
+
+.container2 h3 {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere para outra fonte, se quiser */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.container2 p {
+    font-size: 25px; /* Tamanho da fonte do parágrafo */
+    font-family: 'Verdana', sans-serif; /* Fonte para o parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    text-align: justify; /* Alinha o texto para melhor legibilidade */
+}
+
+.container3 {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9);
+    width: 495px; /* Largura de cada contêiner */
+    height: 522px; /* Altura de cada contêiner */
+    display: flex;
+    justify-content: center; 
+   /* align-items: center; */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-left: 200px;
+}
+
+.container3 h3 {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere para outra fonte, se quiser */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.container3 p {
+    font-size: 25px; /* Tamanho da fonte do parágrafo */
+    font-family: 'Verdana', sans-serif; /* Fonte para o parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    text-align: justify; /* Alinha o texto para melhor legibilidade */
+}
+
+.container4 {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9);
+    width: 495px; /* Largura de cada contêiner */
+    height: 522px; /* Altura de cada contêiner */
+    display: flex;
+   /* justify-content: center; */
+   /* align-items: center; */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.container4 h3 {
+    font-size: 24px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere para outra fonte, se quiser */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.container4 p {
+    font-size: 25px; /* Tamanho da fonte do parágrafo */
+    font-family: 'Verdana', sans-serif; /* Fonte para o parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    text-align: justify; /* Alinha o texto para melhor legibilidade */
 }
