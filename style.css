@@ -201,3 +201,90 @@ picture img {
     color: #7F00FF;
 } 
 
+.container3 {
+    width: 300px;
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-left: 300px;
+}
+
+.cont3header {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.cont3header h4{
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cont3header{
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cont3footer{
+    background-color: white; /* Fundo branco */
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.cont3footer p{
+    margin: 5px 0;
+}
+
+.cont3footer p strong{
+    color: #7F00FF;
+}
+
+.container4 {
+    width: 300px;
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-left: 100px;
+}
+
+.cont4header {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.cont4header h4{
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cont4header{
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cont4footer{
+    background-color: white; /* Fundo branco */
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.cont4footer p{
+    margin: 5px 0;
+}
+
+.cont4footer p strong{
+    color: #7F00FF;
+}
