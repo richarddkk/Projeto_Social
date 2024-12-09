@@ -81,26 +81,28 @@ picture img {
     height: auto; /* Mantém a proporção da imagem */
 }
 
-.with-image img {
-    width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+.gradient-section {
+    width: 100%; /* Largura definida */
+    height: 478px; /* Altura definida */
+    background: linear-gradient(45deg, #3D40E1, #000005); /* Fundo gradiente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex; /* Alinha o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    border-radius: 10px; /* (Opcional) Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Sombra */
 }
 
-.with-image .nota {
-    position: absolute; /* Permite posicionar o texto sobre a imagem */
-    top: 1300px; /* Alinha verticalmente ao centro */
-    left: 50%; /* Alinha horizontalmente ao centro */
-    transform: translate(-50%, -50%); /* Centraliza o texto completamente */
-    color: white; /* Ajuste a cor do texto para ser visível */
-    font-size: 26px; /* Ajuste o tamanho da fonte */
-    font-family: 'Arial', sans-serif; /* Altere a fonte se necessário */
-    padding: 20px; /* Adiciona espaço ao redor do texto */
-   /* background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido (opcional) */
-   /* border-radius: 10px; /* Bordas arredondadas no fundo (opcional) */
+.gradient-section article {
+    color: white; /* Cor do texto */
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    font-size: 18px; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    max-width: 80%; 
 }
 
 .oficina{
-    padding-left: 600px;
+    padding-left: 670px;
 }
 
 .divpai{
@@ -118,7 +120,7 @@ picture img {
     border-radius: 15px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 .cont1header {
@@ -206,7 +208,7 @@ picture img {
     border-radius: 15px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 .cont3header {
@@ -287,4 +289,45 @@ picture img {
 
 .cont4footer p strong{
     color: #7F00FF;
+}
+
+.image-section {
+    text-align: center; /* Centraliza o título e o conteúdo */
+    padding: 20px; /* Espaçamento ao redor da seção */
+ /*   background-color: #f5f5f5; /* Fundo opcional */
+}
+
+.sobre{
+    color: white;/* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-family: 'Arial', sans-serif; /* Fonte */
+    font-size: 36px;
+}
+
+.image-grid {
+    display: grid; /* Ativa o layout em grade */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza o grid */
+}
+
+.image-container {
+    width: 450px; /* Largura fixa do contêiner */
+    height: 260px; /* Altura fixa do contêiner */
+    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.image-container img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: 100%; /* A imagem ocupa toda a altura do contêiner */
+    object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner sem distorção */
+}
+
+button{
+    border-radius: 50px;
+    width: 207px;
+    height: 87px;
+    
 }
