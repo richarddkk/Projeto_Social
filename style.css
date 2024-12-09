@@ -329,5 +329,34 @@ button{
     border-radius: 50px;
     width: 207px;
     height: 87px;
-    
+    margin-top: 20px;
+}
+
+hr{
+    color: black;
+}
+
+footer{
+    background-color: #262294;
+    height: 250px;
+    width: 100%;
+    color: white;
+}
+
+footer .talk{
+    padding-left: 800px;
+    font-size: 36px;
+}
+
+
+
+
+footer .lorem{
+    padding-left: 800px;
+    font-size: 18px;
+}
+
+
+footer .finalinha{
+    margin-top: 40px;
 }
