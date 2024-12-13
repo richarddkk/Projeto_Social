@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-color: #4C1FB0;
 }
-header{
+
+header {
     display: flex;
     background-color: white;
-    
+    padding: 10px 30px; /* Ajuste o padding para dispositivos menores */
+    justify-content: space-between; /* Garante o alinhamento correto */
 }
-nav{
+
+nav {
     background-color: #ffffff;
     font-family: 'Oxygen';
     display: flex;
@@ -19,344 +22,224 @@ nav{
     margin-top: 15px; /* Move o menu de navegação para baixo */
 }
 
-.logo{
+.logo {
     margin-left: 30px;
 }
 
-li{
+li {
     list-style: none;
     margin-top: 15px;
     margin-right: 50px;
 }
-a{
-    color:black;
+
+a {
+    color: black;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 18px
+    font-size: 18px;
 }
-img{
+
+img {
     margin: 15px;
 }
-.botao-area-aluno{
+
+.botao-area-aluno {
     padding: 5px;
     border: 1px solid #4C1FB0;
     border-radius: 5px;
     text-decoration: none;
 }
 
-.botao-area-aluno:hover{
+.botao-area-aluno:hover {
     background-color: #4C1FB0;
     transition: 0.8s;
 }
 
-main{
+main {
     padding-top: 150px;
     padding-left: 50px;
-    color:white
+    color: white;
 }
 
 section h1 {
-    font-size: 52px; /* Ajuste o tamanho da fonte para o título */
-   /* line-height: 1.4;  Para melhorar o espaçamento */
-   font-family: 'Arial';
+    font-size: 52px;
+    font-family: 'Arial';
 }
 
 article p {
-    font-size: 24px; /* Ajuste o tamanho da fonte para o parágrafo */
-    line-height: 1.6; /* Para melhorar o espaçamento */
-  padding-left: 40px;
-  padding-top: 60px;
-  font-family: 'Fira Code', arial;
+    font-size: 24px;
+    line-height: 1.6;
+    padding-left: 40px;
+    padding-top: 60px;
+    font-family: 'Fira Code', arial;
 }
 
-.placeholder{
-    padding-left: 800px; /* Se precisar manter o alinhamento horizontal */
-    position: relative; /* Habilita o ajuste com `top` */
+.placeholder {
+    padding-left: 800px;
+    position: relative;
     top: -370px;
 }
 
-/* Ajusta a largura da imagem */
-picture img {
-    width: 500px; /* Ajuste o valor conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
+.picture img {
+    width: 500px;
+    height: auto;
 }
 
 .gradient-section {
-    width: 100%; /* Largura definida */
-    height: 478px; /* Altura definida */
-    background: linear-gradient(45deg, #3D40E1, #000005); /* Fundo gradiente */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    display: flex; /* Alinha o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente o texto */
-    align-items: center; /* Centraliza verticalmente o texto */
-    border-radius: 10px; /* (Opcional) Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Sombra */
+    width: 100%;
+    height: 478px;
+    background: linear-gradient(45deg, #3D40E1, #000005);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .gradient-section article {
-    color: white; /* Cor do texto */
-    font-family: 'Arial', sans-serif; /* Fonte do texto */
-    font-size: 18px; /* Tamanho do texto */
-    text-align: center; /* Centraliza o texto */
-    max-width: 80%; 
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
 }
 
-.oficina{
-    padding-left: 670px;
+.oficina {
+    padding-left: 45%;
 }
 
-.divpai{
-    background-color: white; /* Fundo branco atrás dos contêineres */
-    width: 100%; /* Ajuste a largura geral */
+.divpai {
+    background-color: white;
     display: flex;
-    flex-wrap: wrap; /* Permite quebrar para a linha seguinte */
-    gap: 100px; /* Espaço entre os contêineres */
-   /* padding: 1000px;
-    /*justify-content: space-around; /* Distribui os contêineres */
+    flex-wrap: wrap;
+    gap: 30px; /* Ajuste o gap para telas menores */
+    justify-content: center; /* Centraliza os itens */
+    padding: 30px;
 }
 
-.container1 {
+.container1, .container2, .container3, .container4 {
     width: 300px;
-    border-radius: 15px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-.cont1header {
-    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
-    padding: 20px;
+.cont1header, .cont2header, .cont3header, .cont4header {
+    background: linear-gradient(to bottom, #2F00FF, #A723A9);
+    padding: 100px;
     color: white;
     text-align: left;
 }
 
-.cont1header h4{
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cont1header{
-    margin: 10px 0 0 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cont1footer{
-    background-color: white; /* Fundo branco */
+.cont1footer, .cont2footer, .cont3footer, .cont4footer {
+    background-color: white;
     padding: 20px;
     text-align: left;
     font-size: 14px;
     color: #333;
-}
-
-.cont1footer p{
-    margin: 5px 0;
-}
-
-.cont1footer p strong{
-    color: #7F00FF;
-} 
-
-.container2 {
-    width: 300px;
-    border-radius: 15px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 100px;
-}
-
-.cont2header {
-    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
-    padding: 20px;
-    color: white;
-    text-align: left;
-}
-
-.cont2header h4{
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cont2header{
-    margin: 10px 0 0 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cont2footer{
-    background-color: white; /* Fundo branco */
-    padding: 20px;
-    text-align: left;
-    font-size: 14px;
-    color: #333;
-}
-
-.cont2footer p{
-    margin: 5px 0;
-}
-
-.cont2footer p strong{
-    color: #7F00FF;
-} 
-
-.container3 {
-    width: 300px;
-    border-radius: 15px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 350px;
-}
-
-.cont3header {
-    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
-    padding: 20px;
-    color: white;
-    text-align: left;
-}
-
-.cont3header h4{
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cont3header{
-    margin: 10px 0 0 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cont3footer{
-    background-color: white; /* Fundo branco */
-    padding: 20px;
-    text-align: left;
-    font-size: 14px;
-    color: #333;
-}
-
-.cont3footer p{
-    margin: 5px 0;
-}
-
-.cont3footer p strong{
-    color: #7F00FF;
-}
-
-.container4 {
-    width: 300px;
-    border-radius: 15px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que o conteúdo fique dentro das bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
-    margin-left: 100px;
-}
-
-.cont4header {
-    background: linear-gradient(to bottom, #2F00FF, #A723A9); /* Cor roxa dos contêineres */
-    padding: 20px;
-    color: white;
-    text-align: left;
-}
-
-.cont4header h4{
-    margin: 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.cont4header{
-    margin: 10px 0 0 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cont4footer{
-    background-color: white; /* Fundo branco */
-    padding: 20px;
-    text-align: left;
-    font-size: 14px;
-    color: #333;
-}
-
-.cont4footer p{
-    margin: 5px 0;
-}
-
-.cont4footer p strong{
-    color: #7F00FF;
 }
 
 .image-section {
-    text-align: center; /* Centraliza o título e o conteúdo */
-    padding: 20px; /* Espaçamento ao redor da seção */
- /*   background-color: #f5f5f5; /* Fundo opcional */
+    text-align: center;
+    padding: 20px;
 }
 
-.sobre{
-    color: white;/* Cor do texto */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    font-family: 'Arial', sans-serif; /* Fonte */
+.sobre {
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
     font-size: 36px;
 }
 
 .image-grid {
-    display: grid; /* Ativa o layout em grade */
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
-    gap: 20px; /* Espaço entre as imagens */
-    justify-content: center; /* Centraliza o grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
 
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+
+
 .image-container {
-    width: 450px; /* Largura fixa do contêiner */
-    height: 260px; /* Altura fixa do contêiner */
-    overflow: hidden; /* Garante que a imagem não saia do contêiner */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-container img {
-    width: 100%; /* A imagem ocupa toda a largura do contêiner */
-    height: 100%; /* A imagem ocupa toda a altura do contêiner */
-    object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner sem distorção */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-button{
-    border-radius: 50px;
-    width: 207px;
-    height: 87px;
-    margin-top: 20px;
-}
 
-hr{
+hr {
     color: black;
 }
 
-footer{
+footer {
     background-color: #262294;
     height: 250px;
     width: 100%;
     color: white;
+    text-align: center;
 }
 
-footer .talk{
-    padding-left: 800px;
+footer .talk {
     font-size: 36px;
 }
 
-
-
-
-footer .lorem{
-    padding-left: 800px;
+footer .lorem {
     font-size: 18px;
 }
 
-
-footer .finalinha{
+footer .finalinha {
     margin-top: 40px;
+}
+
+/* Media Queries para dispositivos móveis e telas menores */
+@media (max-width: 768px) {
+    main {
+        padding-left: 20px; /* Menos padding em telas menores */
+    }
+    section h1 {
+        font-size: 36px; /* Reduzir tamanho da fonte para telas menores */
+    }
+    article p {
+        font-size: 18px; /* Reduzir tamanho da fonte */
+        padding-left: 20px; /* Ajustar padding */
+    }
+    .gradient-section {
+        height: auto;
+        padding: 20px;
+    }
+    .oficina {
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    .divpai {
+        flex-direction: column; /* Empilhar os containers verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 90%; /* Reduzir largura para telas menores */
+        margin-left: 0; /* Remove margem à esquerda */
+    }
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+    footer {
+        padding: 20px;
+    }
 }
