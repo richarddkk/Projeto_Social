@@ -109,37 +109,86 @@ article p {
     padding-left: 45%;
 }
 
+/* -----------------------------Containers-------------------------------------------------------------*/
+
 .divpai {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Ajuste o gap para telas menores */
-    justify-content: center; /* Centraliza os itens */
+    gap: 30px;
+    justify-content: center;
     padding: 30px;
 }
 
+/* Containers Individuais */
 .container1, .container2, .container3, .container4 {
+    position: relative; /* Torna o posicionamento do link mais fácil */
     width: 300px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: white;
 }
 
+.container1:hover, .container2:hover, .container3:hover, .container4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Links clicáveis cobrindo todo o container */
+.container1 a, .container2 a, .container3 a, .container4 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 1; /* Garante que o link cobre o conteúdo */
+}
+
+/* Cabeçalhos */
 .cont1header, .cont2header, .cont3header, .cont4header {
     background: linear-gradient(to bottom, #2F00FF, #A723A9);
-    padding: 100px;
+    padding: 40px 20px;
     color: white;
     text-align: left;
+    transition: background 0.5s ease;
 }
 
+.container1:hover .cont1header,
+.container2:hover .cont2header,
+.container3:hover .cont3header,
+.container4:hover .cont4header {
+    background: linear-gradient(to bottom, #A723A9, #2F00FF);
+}
+
+/* Rodapé */
 .cont1footer, .cont2footer, .cont3footer, .cont4footer {
     background-color: white;
     padding: 20px;
-    text-align: left;
-    font-size: 14px;
     color: #333;
+    font-size: 14px;
+    position: relative;
+    z-index: 2; /* Conteúdo acima do link */
 }
+
+.cont1footer p, .cont2footer p, .cont3footer p, .cont4footer p {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .divpai {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1, .container2, .container3, .container4 {
+        width: 90%;
+    }
+}
+/* ----------------------------------------------------------------------------------------------------------*/
 
 .image-section {
     text-align: center;
