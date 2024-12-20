@@ -28,6 +28,17 @@
     font-size: 1.1rem;
     line-height: 1.6;
     overflow-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 700px;
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
+    align-self: center;
 }
 /* #endregion */
 
@@ -45,6 +56,11 @@
 
 p {
     margin-bottom: 20px !important;
+}
+
+h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
 }
 /* #endregion */
 

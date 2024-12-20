@@ -9,6 +9,22 @@
     <!-- bs (bootstrap) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- imagens ficam muito grandes no breakpoint xl, então redimensionamento abaixo-->
+    <script>
+        window.onload = window.screen.width >= 1200 && resizeImages;
+
+        function resizeImages() {
+            document.querySelectorAll('img').forEach(img => {
+                let newWidth = img.width * 0.8 + "px";
+                let newHeight = img.height * 0.8 + "px";
+
+                img.style.width = newWidth;
+                img.style.height = newHeight;
+            })
+        }
+    </script>
 </head>
 <body>
     <header class="w-100" style="height: 40px; background-color: #D9D9D9;"></header>
@@ -179,5 +195,84 @@
         </div>
     </section>
 
+    <section class="section-article bg-dark-blue">
+        <div class="container">
+            <article class="block-content">
+                <h2 class="title">
+                    HUB, SWITCH, ROTEADOR, BRIDGE, Repetidor EGATEWAY
+                </h2>
+
+            <p>A informática gosta de se apossar de termos que não são deles, muitos destes
+                ao se procurar na literatura, fora do contexto de informática você irá se deparar
+                com outro significado. Estes são equipamentos físicos que se compram em
+                lojas e servem para que haja a distribuição do sinal de internet, nos tópicos a
+                seguir iremos discutir um pouco sobre eles.
+            </p>
+
+            <h4>HUB</h4>
+            <img src="imagens/redes/hub.png" alt="Hub" srcset="">
+            <p>
+                Um hub de rede é um dispositivo usado para conectar múltiplos dispositivos em uma rede local (LAN), permitindo que eles compartilhem informações. Surgiu nas décadas de 1980 e 1990, quando o padrão Ethernet começou a se consolidar como a principal tecnologia de redes locais. Naquela época, ele era essencial para implementar a topologia em estrela, que oferecia maior confiabilidade e escalabilidade em comparação às topologias de barramento e anel. O funcionamento de um hub é simples: ele opera na camada física (camada 1) do modelo OSI e transmite os sinais recebidos de um dispositivo para todos os outros na rede. 
+            </p>
+
+            <p>
+                Por ser um dispositivo “não inteligente”, o hub não diferencia os destinatários das mensagens, o que pode gerar colisões de dados em redes movimentadas e reduzir a eficiência. Apesar de sua importância histórica, os hubs caíram em desuso com a popularização dos switches, que operam de forma mais eficiente na camada de enlace (Camada 2) e direcionam os dados apenas ao dispositivo correto, eliminando colisões. Hoje, os hubs são raramente usados, mas permanecem como um marco no desenvolvimento das redes locais.
+            </p>
+
+            <h4>SWITCH</h4>
+            <img src="imagens/redes/switch.png" alt="Switch" srcset="">
+            <p>
+                Um switch é um dispositivo usado para conectar dispositivos em uma rede
+                local (LAN), funcionando de forma mais avançada e eficiente que um hub.
+                Surgiu no início da década de 1990 como uma evolução tecnológica para
+                resolver as limitações dos hubs, especialmente em relação às colisões de
+                dados e à eficiência da transmissão.
+            </p>
+
+            <p>
+                O switch opera na camada de enlace (Camada 2) do modelo OSI, sendo
+                capaz de identificar os endereços MAC (Media Access Control) de cada
+                dispositivo conectado. Ele cria uma tabela de endereços para encaminhar
+                os dados diretamente ao dispositivo correto, em vez de transmitir para
+                todos, como faz o hub. Isso elimina colisões e aumenta significativamente a
+                largura de banda disponível para cada conexão.
+            </p>
+
+            <p>
+                Além de melhorar o desempenho, os switches introduziram recursos como
+                VLANs (Redes Locais Virtuais), que permitem segmentar redes para maior
+                segurança e organização. Hoje, eles são um componente essencial em
+                redes modernas, substituindo quase completamente os hubs e
+                funcionando como o coração da comunicação em ambientes corporativos e
+                domésticos.
+            </p>
+
+            <h4>Roteador</h4>
+            <img src="imagens/redes/roteador.png" alt="Roteador" srcset="">
+            <p>Um roteador é um dispositivo usado para conectar diferentes redes entre si,
+                permitindo a comunicação e o encaminhamento de dados entre elas. Ele
+                surgiu com o crescimento das redes de computadores e da necessidade de
+                interligar redes locais (LANs) à Internet ou a outras redes, especialmente a
+                partir da década de 1980, quando os primeiros protocolos de roteamento,
+                como o RIP (Routing Information Protocol), começaram a ser desenvolvidos.
+            </p>
+
+            <p>O roteador opera principalmente na camada de rede (Camada 3) do modelo
+                OSI. Sua principal função é determinar o melhor caminho para enviar dados
+                entre redes distintas, utilizando endereços IP para identificar as origens e os
+                destinos das informações. Ele também é responsável por segmentar redes,
+                melhorar a segurança e otimizar o tráfego, evitando congestionamentos.
+            </p>
+
+            <p>Além de interligar redes, os roteadores modernos frequentemente incluem
+                funcionalidades como firewalls, NAT (Network Address Translation) e Wi-Fi,
+                sendo indispensáveis tanto em redes domésticas quanto corporativas.
+                Graças à sua capacidade de conectar dispositivos locais à Internet, os
+                roteadores se tornaram um componente central da infraestrutura de rede
+                atual.
+            </p>
+            </article>
+        </div>
+    </section>
 </body>
 </html>
