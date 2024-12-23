@@ -10,269 +10,887 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <!-- imagens ficam muito grandes no breakpoint xl, então redimensionamento abaixo-->
     <script>
-        window.onload = window.screen.width >= 1200 && resizeImages;
-
         function resizeImages() {
             document.querySelectorAll('img').forEach(img => {
-                let newWidth = img.width * 0.8 + "px";
-                let newHeight = img.height * 0.8 + "px";
+                let newWidth = img.width * 0.6 + "px";
+                let newHeight = img.height * 0.6 + "px";
 
                 img.style.width = newWidth;
                 img.style.height = newHeight;
             })
         }
+
+        window.onload = window.screen.width >= 1200 && resizeImages;
     </script>
 </head>
 <body>
     <header class="w-100" style="height: 40px; background-color: #D9D9D9;"></header>
 
-    <section class="section-article">
-        <h1 class="title display-4" style="font-weight: 500;">REDES DE<br>COMPUTADORES</h1>
-    </section>
+    <main>
+        <section class="section-article">
+            <h1 class="title display-4 text-center" style="font-weight: 500;">REDES DE<br>COMPUTADORES</h1>
+        </section>
 
-    <section class="section-article py-5" style="background-color: #262294;">
-        <div class="container-fluid container-lg">
-            <h2 class="title poppins mb-5 text-center" style="color: white;">Sumário</h2>
+        <section class="section-article py-5" style="background-color: #262294;">
+            <div class="container-fluid container-lg">
+                <h2 class="title poppins mb-5" style="color: white; text-align: center;">Sumário</h2>
+        
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <ol class="list-unstyled pe-lg-4">    
+                            <li class="mb-3">1. Introdução</li>
+                            <li class="mb-3">2. O que são redes de computadores?
+                                <ol>
+                                    <li>Componentes básicos de Redes e Formas de Comunicação</li>
+                                </ol>
+                            </li>
+                            <li class="mb-3">3. HUB, SWITCH, Roteador, BRIDGE e Repetidores
+                                <ol>
+                                    <li>HUB - Concentrador não gerenciável</li>
+                                    <li>SWITCH - Concentrador Gerenciável</li>
+                                    <li>Roteador</li>
+                                    <li>Bridge</li>
+                                    <li>Repetidores</li>
+                                </ol>
+                            </li>
+                            <li class="mb-3">4. Meios de transmissão de dados
+                                <ol>
+                                    <li>Cabos Coaxiais</li>
+                                    <li>Cabos de par trançado</li>
+                                    <li>Categorias de cabos de par trançado</li>
+                                    <li>Conexão sem fio ou wireless</li>
+                                    <li>Fibra óptica</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
     
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-5">
-                    <ol class="list-unstyled pe-lg-4">    
-                        <li class="mb-3">1. Introdução</li>
-                        <li class="mb-3">2. O que são redes de computadores?
-                            <ol>
-                                <li>Componentes básicos de Redes e Formas de Comunicação</li>
-                            </ol>
-                        </li>
-                        <li class="mb-3">3. HUB, SWITCH, Roteador, BRIDGE e Repetidores
-                            <ol>
-                                <li>HUB - Concentrador não gerenciável</li>
-                                <li>SWITCH - Concentrador Gerenciável</li>
-                                <li>Roteador</li>
-                                <li>Bridge</li>
-                                <li>Repetidores</li>
-                            </ol>
-                        </li>
-                        <li class="mb-3">4. Meios de transmissão de dados
-                            <ol>
-                                <li>Cabos Coaxiais</li>
-                                <li>Cabos de par trançado</li>
-                                <li>Categorias de cabos de par trançado</li>
-                                <li>Conexão sem fio ou wireless</li>
-                                <li>Fibra óptica</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
-
-                <!-- linhas divisórias do bs -->
-                <div class="col-auto d-none d-lg-flex align-items-center">
-                    <div class="vr h-100"></div>
-                </div>
-
-                <div class="col-12 d-lg-none">
-                    <hr class="my-4">
-                </div>
-
-                <div class="col-12 col-lg-5";">
-                    <ol class="list-unstyled ps-lg-4">    
-                        <li class="mb-3">5. Internet das Coisas
-                            <ol>
-                                <li>O que é Internet das Coisas?</li>
-                            </ol>
-                        </li>
-                        <li class="mb-3">6. Modelos de referência ISO/OSI e TCP/IP
-                            <ol>
-                                <li>Descrevendo as 7 camadas
-                                    <ol>
-                                        <li>Camada Física</li>
-                                        <li>Camada de enlace</li>
-                                        <li>Camada de rede</li>
-                                        <li>Camada de transporte</li>
-                                        <li>Camada de sessão</li>
-                                        <li>Camada de apresentação</li>
-                                        <li>Camada de aplicação</li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </li>
-                        <li class="mb-3">7. A arquitetura TCP/IP
-                            <ol>
-                                <li>Camada de Interface de Rede</li>
-                                <li>Camada de Internet</li>
-                                <li>Camada de Transporte</li>
-                                <li>Camada de Aplicação</li>
-                            </ol>
-                        </li>
-                        <li class="mb-3">8. Classificação das redes e suas topologias
-                            <ol>
-                                <li>Redes Pessoais (PAN)</li>
-                                <li>Redes locais (LAN)</li>
-                                <li>Redes metropolitanas (MAN)</li>
-                                <li>Redes longas distâncias (WAN)</li>
-                                <li>Topologia de rede
-                                    <ol>
-                                        <li>Barramento</li>
-                                        <li>Anel</li>
-                                        <li>Estrela</li>
-                                        <li>Malha</li>
-                                        <li>Arvore</li>
-                                        <li>Híbrida</li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
+                    <!-- linhas divisórias do bs -->
+                    <div class="col-auto d-none d-lg-flex align-items-center">
+                        <div class="vr h-100"></div>
+                    </div>
+    
+                    <div class="col-12 d-lg-none">
+                        <hr class="my-4">
+                    </div>
+    
+                    <div class="col-12 col-lg-5">
+                        <ol class="list-unstyled ps-lg-4">    
+                            <li class="mb-3">5. Internet das Coisas
+                                <ol>
+                                    <li>O que é Internet das Coisas?</li>
+                                </ol>
+                            </li>
+                            <li class="mb-3">6. Modelos de referência ISO/OSI e TCP/IP
+                                <ol>
+                                    <li>Descrevendo as 7 camadas
+                                        <ol>
+                                            <li>Camada Física</li>
+                                            <li>Camada de enlace</li>
+                                            <li>Camada de rede</li>
+                                            <li>Camada de transporte</li>
+                                            <li>Camada de sessão</li>
+                                            <li>Camada de apresentação</li>
+                                            <li>Camada de aplicação</li>
+                                        </ol>
+                                    </li>
+                                    <li class="mb-3">A arquitetura TCP/IP
+                                        <ol>
+                                            <li>Camada de Interface de Rede</li>
+                                            <li>Camada de Internet</li>
+                                            <li>Camada de Transporte</li>
+                                            <li>Camada de Aplicação</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="mb-3">7. Classificação das redes e suas topologias
+                                <ol>
+                                    <li>Redes Pessoais (PAN)</li>
+                                    <li>Redes locais (LAN)</li>
+                                    <li>Redes metropolitanas (MAN)</li>
+                                    <li>Redes longas distâncias (WAN)</li>
+                                    <li>Topologia de rede
+                                        <ol>
+                                            <li>Barramento</li>
+                                            <li>Anel</li>
+                                            <li>Estrela</li>
+                                            <li>Malha</li>
+                                            <li>Arvore</li>
+                                            <li>Híbrida</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section-article">
-        <div class="container">
-            <article class="block-content">
-                <h2 class="title">Introdução</h2>
-                <p>Esse minicurso tem como objetivo fornecer uma introdução às redes de computadores, abordando seus principais conceitos e componentes. O conteúdo abrange os fundamentos das redes, como dispositivos de comunicação, protocolos e topologias, além de explorar os diferentes tipos de redes (LAN, WAN, etc.) e as tecnologias utilizadas para interconectar sistemas. Serão discutidos também aspectos importantes como segurança, gerenciamento e otimização de tráfego. Ao final, os participantes terão uma visão geral de como as redes de computadores funcionam e como são aplicadas no cotidiano e no ambiente corporativo.</p>
-            </article>
-        </div>
-    </section>
+        <section class="section-article">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Introdução</h2>
+                    <p>Esse minicurso tem como objetivo fornecer uma introdução às redes de computadores, abordando seus principais conceitos e componentes. O conteúdo abrange os fundamentos das redes, como dispositivos de comunicação, protocolos e topologias, além de explorar os diferentes tipos de redes (LAN, WAN, etc.) e as tecnologias utilizadas para interconectar sistemas. Serão discutidos também aspectos importantes como segurança, gerenciamento e otimização de tráfego. Ao final, os participantes terão uma visão geral de como as redes de computadores funcionam e como são aplicadas no cotidiano e no ambiente corporativo.</p>
+                </article>
+            </div>
+        </section>
 
-    <section class="section-article bg-dark-blue">
-        <div class="container">
-            <article class="block-content">
-                <h2 class="title">O que são redes de computadores</h2>
-                <p>O que conhecemos hoje como rede de computador surgiu primeiramente
-                    como um projeto de defesa durante o período da Segunda Guerra Mundial
-                    esse projeto recebeu o nome de ARPANet. A ideia da ARPANet era que a
-                    informação de sigilosa não ficasse concentrada em única localidade, pois, se
-                    fosse atacada os dados seriam destruídos para sempre. O princípio básico é
-                    que os pontos que recebessem essa rede funcionariam como células
-                    conectadas então se uma região fosse atacada, a região seguinte possuíria as
-                    informações.</p>
+        <section class="section-article bg-dark-blue">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">O que são redes de computadores</h2>
+                    <p>O que conhecemos hoje como rede de computador surgiu primeiramente
+                        como um projeto de defesa durante o período da Segunda Guerra Mundial
+                        esse projeto recebeu o nome de ARPANet. A ideia da ARPANet era que a
+                        informação de sigilosa não ficasse concentrada em única localidade, pois, se
+                        fosse atacada os dados seriam destruídos para sempre. O princípio básico é
+                        que os pontos que recebessem essa rede funcionariam como células
+                        conectadas então se uma região fosse atacada, a região seguinte possuíria as
+                        informações.</p>
 
-                <p>Os EUA percebeu que tinha uma tecnologia com extremo potencial em mãos
-                    e começaram os processos de disseminação da ARPANet, a princípio para
-                    organizações militares, depois universidades e empresas e por fim a todo o
-                    público dando inicio a nossa tão amada internet. </p>
+                    <p>Os EUA percebeu que tinha uma tecnologia com extremo potencial em mãos
+                        e começaram os processos de disseminação da ARPANet, a princípio para
+                        organizações militares, depois universidades e empresas e por fim a todo o
+                        público dando inicio a nossa tão amada internet. </p>
 
-                <p>Uma rede de computador moderna pode ser caracterizada, por haver uma
-                    máquina chamada cliente, uma máquina chamada servidor conectadas por
-                    um meio de comunicação. Porém a matéria de redes não se limita apenas os
-                    PCs (Personal Computers). Por mais que quando se fala em redes pensamos
-                    em conexão na via internet, outros meios também podem ser considerados
-                    redes de computadores, como por exemplo, uma conexão bluetooth a conexão
-                    de cabo entre o mouse e seu computador, uma conexão de rádio frequencia e
-                    um drone por exemplo. Existem diversos meios de conexão e todos eles serão
-                    vistos durante o curso. </p>
-            </article>
-        </div>
-    </section>
+                    <p>Uma rede de computador moderna pode ser caracterizada, por haver uma
+                        máquina chamada cliente, uma máquina chamada servidor conectadas por
+                        um meio de comunicação. Porém a matéria de redes não se limita apenas os
+                        PCs (Personal Computers). Por mais que quando se fala em redes pensamos
+                        em conexão na via internet, outros meios também podem ser considerados
+                        redes de computadores, como por exemplo, uma conexão bluetooth a conexão
+                        de cabo entre o mouse e seu computador, uma conexão de rádio frequencia e
+                        um drone por exemplo. Existem diversos meios de conexão e todos eles serão
+                        vistos durante o curso. </p>
+                </article>
+            </div>
+        </section>
 
-    <section class="section-article">
-        <div class="container">
-            <article class="block-content">
-                <h2 class="title" style="color: white;">Componentes básicos de rede e formas de comunicação</h2>
-                <p> Uma rede de computador é composta principalmente por um roteador, um HUB e um switch; estes sendo os componentes que controlam a rede geral. No lado cliente, há a placa de rede. A rede
-                    pode sofrer alguma mudança de estrutura, porém, a grosso modo,
-                    estes são os equipamentos necessários. 
+        <section class="section-article">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title" style="color: white;">Componentes básicos de rede e formas de comunicação</h2>
+                    <p> Uma rede de computador é composta principalmente por um roteador, um HUB e um switch; estes sendo os componentes que controlam a rede geral. No lado cliente, há a placa de rede. A rede
+                        pode sofrer alguma mudança de estrutura, porém, a grosso modo,
+                        estes são os equipamentos necessários. 
+                    </p>
+
+                    <p>Há, além desses componentes, outros intermediários lógicos numa rede, como o protocólo, funcionando como se fosse uma regra a qual o pacote de informação tem
+                        que obedecer para que seja entregue. Outra palavra que você irá ler muito nesses primeiros textos é o IP que vem de Internet Protocol este protocólo nada mais é do que o registro na internet, como se fosse seu CPF, um conjunto numérico que é capaz de te identificar. Não se preocupe quanto a essas palavras pois teremos aulas dedicadas a protocólos e IP.
+                    </p>
+                
+                    <p>
+                        Deve ter em mente é que tudo que passa na frente do seu computador
+                        nada mais é do que um conjunto de 0 e 1, esse conjunto recebe o nome de
+                        bit um acrônimo para BInary DigiT. O conjunto desses bits forma uma
+                        mensagem essa mensagem recebe o nome de pacote dentro do mundo de
+                        redes. O roteador que conhecemos ou HUB ou SWTICH recebem o nome
+                        genérico de concentrador. 
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article bg-dark-blue">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">
+                        HUB, SWITCH, ROTEADOR, BRIDGE, Repetidor EGATEWAY
+                    </h2>
+
+                <p>A informática gosta de se apossar de termos que não são deles, muitos destes
+                    ao se procurar na literatura, fora do contexto de informática você irá se deparar
+                    com outro significado. Estes são equipamentos físicos que se compram em
+                    lojas e servem para que haja a distribuição do sinal de internet, nos tópicos a
+                    seguir iremos discutir um pouco sobre eles.
                 </p>
 
-                <p>Há, além desses componentes, outros intermediários lógicos numa rede, como o protocólo, funcionando como se fosse uma regra a qual o pacote de informação tem
-                    que obedecer para que seja entregue. Outra palavra que você irá ler muito nesses primeiros textos é o IP que vem de Internet Protocol este protocólo nada mais é do que o registro na internet, como se fosse seu CPF, um conjunto numérico que é capaz de te identificar. Não se preocupe quanto a essas palavras pois teremos aulas dedicadas a protocólos e IP.
-                </p>
-               
+                <h4>HUB</h4>
+                <img src="imagens/redes/hub.png" alt="Hub" srcset="">
                 <p>
-                    Deve ter em mente é que tudo que passa na frente do seu computador
-                    nada mais é do que um conjunto de 0 e 1, esse conjunto recebe o nome de
-                    bit um acrônimo para BInary DigiT. O conjunto desses bits forma uma
-                    mensagem essa mensagem recebe o nome de pacote dentro do mundo de
-                    redes. O roteador que conhecemos ou HUB ou SWTICH recebem o nome
-                    genérico de concentrador. 
+                    Um hub de rede é um dispositivo usado para conectar múltiplos dispositivos em uma rede local (LAN), permitindo que eles compartilhem informações. Surgiu nas décadas de 1980 e 1990, quando o padrão Ethernet começou a se consolidar como a principal tecnologia de redes locais. Naquela época, ele era essencial para implementar a topologia em estrela, que oferecia maior confiabilidade e escalabilidade em comparação às topologias de barramento e anel. O funcionamento de um hub é simples: ele opera na camada física (camada 1) do modelo OSI e transmite os sinais recebidos de um dispositivo para todos os outros na rede. 
                 </p>
-            </article>
-        </div>
-    </section>
 
-    <section class="section-article bg-dark-blue">
-        <div class="container">
-            <article class="block-content">
-                <h2 class="title">
-                    HUB, SWITCH, ROTEADOR, BRIDGE, Repetidor EGATEWAY
-                </h2>
+                <p>
+                    Por ser um dispositivo “não inteligente”, o hub não diferencia os destinatários das mensagens, o que pode gerar colisões de dados em redes movimentadas e reduzir a eficiência. Apesar de sua importância histórica, os hubs caíram em desuso com a popularização dos switches, que operam de forma mais eficiente na camada de enlace (Camada 2) e direcionam os dados apenas ao dispositivo correto, eliminando colisões. Hoje, os hubs são raramente usados, mas permanecem como um marco no desenvolvimento das redes locais.
+                </p>
 
-            <p>A informática gosta de se apossar de termos que não são deles, muitos destes
-                ao se procurar na literatura, fora do contexto de informática você irá se deparar
-                com outro significado. Estes são equipamentos físicos que se compram em
-                lojas e servem para que haja a distribuição do sinal de internet, nos tópicos a
-                seguir iremos discutir um pouco sobre eles.
-            </p>
+                <h4>SWITCH</h4>
+                <img src="imagens/redes/switch.png" alt="Switch" srcset="">
+                <p>
+                    Um switch é um dispositivo usado para conectar dispositivos em uma rede
+                    local (LAN), funcionando de forma mais avançada e eficiente que um hub.
+                    Surgiu no início da década de 1990 como uma evolução tecnológica para
+                    resolver as limitações dos hubs, especialmente em relação às colisões de
+                    dados e à eficiência da transmissão.
+                </p>
 
-            <h4>HUB</h4>
-            <img src="imagens/redes/hub.png" alt="Hub" srcset="">
-            <p>
-                Um hub de rede é um dispositivo usado para conectar múltiplos dispositivos em uma rede local (LAN), permitindo que eles compartilhem informações. Surgiu nas décadas de 1980 e 1990, quando o padrão Ethernet começou a se consolidar como a principal tecnologia de redes locais. Naquela época, ele era essencial para implementar a topologia em estrela, que oferecia maior confiabilidade e escalabilidade em comparação às topologias de barramento e anel. O funcionamento de um hub é simples: ele opera na camada física (camada 1) do modelo OSI e transmite os sinais recebidos de um dispositivo para todos os outros na rede. 
-            </p>
+                <p>
+                    O switch opera na camada de enlace (Camada 2) do modelo OSI, sendo
+                    capaz de identificar os endereços MAC (Media Access Control) de cada
+                    dispositivo conectado. Ele cria uma tabela de endereços para encaminhar
+                    os dados diretamente ao dispositivo correto, em vez de transmitir para
+                    todos, como faz o hub. Isso elimina colisões e aumenta significativamente a
+                    largura de banda disponível para cada conexão.
+                </p>
 
-            <p>
-                Por ser um dispositivo “não inteligente”, o hub não diferencia os destinatários das mensagens, o que pode gerar colisões de dados em redes movimentadas e reduzir a eficiência. Apesar de sua importância histórica, os hubs caíram em desuso com a popularização dos switches, que operam de forma mais eficiente na camada de enlace (Camada 2) e direcionam os dados apenas ao dispositivo correto, eliminando colisões. Hoje, os hubs são raramente usados, mas permanecem como um marco no desenvolvimento das redes locais.
-            </p>
+                <p>
+                    Além de melhorar o desempenho, os switches introduziram recursos como
+                    VLANs (Redes Locais Virtuais), que permitem segmentar redes para maior
+                    segurança e organização. Hoje, eles são um componente essencial em
+                    redes modernas, substituindo quase completamente os hubs e
+                    funcionando como o coração da comunicação em ambientes corporativos e
+                    domésticos.
+                </p>
 
-            <h4>SWITCH</h4>
-            <img src="imagens/redes/switch.png" alt="Switch" srcset="">
-            <p>
-                Um switch é um dispositivo usado para conectar dispositivos em uma rede
-                local (LAN), funcionando de forma mais avançada e eficiente que um hub.
-                Surgiu no início da década de 1990 como uma evolução tecnológica para
-                resolver as limitações dos hubs, especialmente em relação às colisões de
-                dados e à eficiência da transmissão.
-            </p>
+                <h4>Roteador</h4>
+                <img src="imagens/redes/roteador.png" alt="Roteador" srcset="">
+                <p>Um roteador é um dispositivo usado para conectar diferentes redes entre si,
+                    permitindo a comunicação e o encaminhamento de dados entre elas. Ele
+                    surgiu com o crescimento das redes de computadores e da necessidade de
+                    interligar redes locais (LANs) à Internet ou a outras redes, especialmente a
+                    partir da década de 1980, quando os primeiros protocolos de roteamento,
+                    como o RIP (Routing Information Protocol), começaram a ser desenvolvidos.
+                </p>
 
-            <p>
-                O switch opera na camada de enlace (Camada 2) do modelo OSI, sendo
-                capaz de identificar os endereços MAC (Media Access Control) de cada
-                dispositivo conectado. Ele cria uma tabela de endereços para encaminhar
-                os dados diretamente ao dispositivo correto, em vez de transmitir para
-                todos, como faz o hub. Isso elimina colisões e aumenta significativamente a
-                largura de banda disponível para cada conexão.
-            </p>
+                <p>O roteador opera principalmente na camada de rede (Camada 3) do modelo
+                    OSI. Sua principal função é determinar o melhor caminho para enviar dados
+                    entre redes distintas, utilizando endereços IP para identificar as origens e os
+                    destinos das informações. Ele também é responsável por segmentar redes,
+                    melhorar a segurança e otimizar o tráfego, evitando congestionamentos.
+                </p>
 
-            <p>
-                Além de melhorar o desempenho, os switches introduziram recursos como
-                VLANs (Redes Locais Virtuais), que permitem segmentar redes para maior
-                segurança e organização. Hoje, eles são um componente essencial em
-                redes modernas, substituindo quase completamente os hubs e
-                funcionando como o coração da comunicação em ambientes corporativos e
-                domésticos.
-            </p>
+                <p>Além de interligar redes, os roteadores modernos frequentemente incluem
+                    funcionalidades como firewalls, NAT (Network Address Translation) e Wi-Fi,
+                    sendo indispensáveis tanto em redes domésticas quanto corporativas.
+                    Graças à sua capacidade de conectar dispositivos locais à Internet, os
+                    roteadores se tornaram um componente central da infraestrutura de rede
+                    atual.
+                </p>
 
-            <h4>Roteador</h4>
-            <img src="imagens/redes/roteador.png" alt="Roteador" srcset="">
-            <p>Um roteador é um dispositivo usado para conectar diferentes redes entre si,
-                permitindo a comunicação e o encaminhamento de dados entre elas. Ele
-                surgiu com o crescimento das redes de computadores e da necessidade de
-                interligar redes locais (LANs) à Internet ou a outras redes, especialmente a
-                partir da década de 1980, quando os primeiros protocolos de roteamento,
-                como o RIP (Routing Information Protocol), começaram a ser desenvolvidos.
-            </p>
+                <h4>Bridge</h4>
+                <img src="imagens/redes/bridge.png" alt="">
+                <p>Uma bridge (ou ponte de rede) é um dispositivo usado para conectar e
+                    segmentar redes locais (LANs), permitindo que duas ou mais redes
+                    funcionem como uma única, de maneira eficiente. Introduzida na década
+                    de 1980, a bridge foi projetada para resolver problemas de
+                    congestionamento em redes Ethernet, dividindo o tráfego em segmentos
+                    menores.
+                </p>
 
-            <p>O roteador opera principalmente na camada de rede (Camada 3) do modelo
-                OSI. Sua principal função é determinar o melhor caminho para enviar dados
-                entre redes distintas, utilizando endereços IP para identificar as origens e os
-                destinos das informações. Ele também é responsável por segmentar redes,
-                melhorar a segurança e otimizar o tráfego, evitando congestionamentos.
-            </p>
+                <p>A bridge opera na camada de enlace (Camada 2) do modelo OSI e utiliza
+                    endereços MAC para filtrar e encaminhar dados entre segmentos de rede.
+                    Ela age como um intermediário inteligente, aprendendo os endereços dos
+                    dispositivos conectados e encaminhando os pacotes apenas para o
+                    segmento correto, reduzindo o tráfego desnecessário e melhorando o
+                    desempenho geral da rede.
+                </p>
 
-            <p>Além de interligar redes, os roteadores modernos frequentemente incluem
-                funcionalidades como firewalls, NAT (Network Address Translation) e Wi-Fi,
-                sendo indispensáveis tanto em redes domésticas quanto corporativas.
-                Graças à sua capacidade de conectar dispositivos locais à Internet, os
-                roteadores se tornaram um componente central da infraestrutura de rede
-                atual.
-            </p>
-            </article>
-        </div>
-    </section>
+                <p>Embora tenham sido amplamente usadas no passado, as bridges foram
+                    gradualmente substituídas pelos switches, que oferecem funcionalidades
+                    mais avançadas e maior escalabilidade. No entanto, bridges ainda têm
+                    aplicações em situações específicas, como a extensão de redes ou a
+                    integração de tecnologias diferentes, como redes com e sem fio.
+                </p>
+
+                <h4>Repetidor</h4>
+                <img src="imagens/redes/repetidor.png" alt="Repetidor">
+                <p>Um repetidor é um dispositivo de rede usado para ampliar o alcance de
+                    uma conexão, regenerando e retransmitindo sinais de dados. Ele surgiu nas
+                    primeiras redes locais (LANs) como uma solução para superar as limitações
+                    de distância impostas por cabos físicos, como os cabos coaxiais e, mais
+                    tarde, os cabos Ethernet.
+                </p>
+
+                <p>Operando na camada física (Camada 1) do modelo OSI, o repetidor é um
+                    dispositivo simples e “não inteligente”. Sua principal função é receber sinais
+                    enfraquecidos ou degradados ao longo de um cabo e retransmiti-los com a
+                    mesma potência e qualidade original. Isso permite que os dados viajem por
+                    distâncias maiores sem perda significativa de integridade.
+                </p>
+
+                <p>Embora os repetidores tenham sido essenciais em redes antigas, sua
+                    utilização diminuiu com o advento de tecnologias mais avançadas, como
+                    switches e roteadores. No entanto, dispositivos semelhantes, como
+                    extensores Wi-Fi e boosters de sinal, continuam desempenhando funções
+                    semelhantes em redes modernas, especialmente em ambientes sem fio.
+                </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Meios de transmissão de dados</h2>
+                    <h4>Cabos coaxiais</h4>
+                    <img src="imagens/redes/cabo_coaxial.png" alt="">
+                    <p>
+                        Utilizados em redes de computadores antigas e ainda hoje em cabos de
+                        antenas para redes wireless e cable modem, mas que possuíam uma série de
+                        limitações como: mal contato, conectores caros, cabos pouco maleáveis e um
+                        limite de velocidade de 10 Mbits/s. O cabo coaxial foi por certo tempo
+                    </p>
+
+                    <p>utilizado como cabeamento responsável pela interligação de computadores
+                        em uma rede. Um cabo coaxial é basicamente composto por quatro
+                        elementos (da parte interna para a externa): um fio de cobre (responsável por
+                        transmitir sinais elétricos), um material isolante, com o intuito de minimizar
+                        interferências eletromagnéticas produzidas pelo cobre (condutor de energia),
+                        um condutor externo de malha e uma camada plástica protetora do cabo.
+                        Estes quatro elementos combinados, formam o cabo coaxial.
+                    </p>
+
+                    <h4>Cabos de par trançado</h4>
+                    <img src="imagens/redes/trançado.png" alt="">
+                    <p>Os cabos de par trançado são, atualmente, os mais utilizados em uma rede
+                        local de computadores. Composto por pares de fios de cobre, trançados
+                        entre si, possuem diferentes tipos, categorias e padrões. 
+                    </p>
+
+                    <p>Existem algumas nomenclaturas que remetem ao cabo de par trançado,
+                        como por exemplo, as expressões 10Base-T ou 100Base-T, que se referem ao tipo de meio utilizado (no caso “T”, como par trançado e “10” ou “100”, como a taxa de transmissão em megabits). Outra expressão que nos remete a ideia de cabo de par trançado é a expressão “Ethernet” (protocolo de interconexão para redes locais), bastante usual, no funcionamento das redes de computadores. Cabos de par trançado fazem uso de material condutor (cobre) para transmitir sinais elétricos. Associado a isso temos basicamente a frequência que este sinal é transmitido e a quantidade de bits que podem ser transferidos por segundo. Por tratar-se de material condutor de sinais elétricos, os cabos de par trançado estão sujeitos a interferências eletromagnéticas externas de diferentes naturezas. e-Tec Brasil 76 Redes de Computadores. 
+                    </p>
+
+                    <p>Uma das maiores vantagens em se utilizar cabos de par trançado para
+                        implantar uma rede de computadores é o fato de possuírem baixo custo e
+                        flexibilidade em prestar manutenção, corrigir eventuais problemas ou até
+                        mesmo expandir o número de computadores ligados a esta rede. 
+                    </p>
+
+                    <h4>Categorias de cabos de par trançado</h4>
+                    <p> Os cabos de par trançado são divididos em categorias como uma espécie de
+                        classificação e caracte rísticas do mesmo (frequência, velocidade de
+                        transmissão, etc.). 
+                    </p>
+
+                    <p>As categorias dos cabos de par trançado vão de 1 a 7. Para todas estas
+                        categorias a distância máxima permitida entre um ponto e outro onde o cabo é utilizado é de 100 metros. Fatores que influenciam no comprimento máximo do cabo já foram citados anteriormente, como frequência, taxa de transferência de dados e interferência eletromagnética.
+                    </p>
+
+                    <p>No Quadro é possível visualizar um comparativo entre as categorias existentes,
+                        taxa de transfe rência possível e frequência.
+                    </p>
+
+                    <h4>Padrões de conexão de cabo e pinagem</h4>
+                    <img src="imagens/redes/cabo_padroes.png" alt="">
+                    <p>Um cabo de par trançado dispõe em seu interior de oito fios dispostos em
+                        pares, sendo que destes quatro pares somente dois pares são efetivamente
+                        utilizados (sendo um para transmitir e outro para receber dados). Os oito fios
+                        presentes no cabo possuem cores diferentes, como forma de simplificar a
+                        identificação dos mesmos e a crimpagem (ato de conectar o cabo ao conector
+                        RJ-45). 
+                    </p>
+
+                    <p>Para que seja mantido um padrão quanto a ordem de cores deste cabo junto
+                        ao conector, tem-se dois padrões bastante utilizados: os padrões EIA 568A e o
+                        padrão EIA 568B. O padrão EIA 568B é o mais comum e segue a ordem quanto
+                        a disposição dos fios, conforme apresentado no quadro:
+                    </p>
+                    <img src="imagens/redes/categoria_desempenho.png" alt="">
+
+                    <h4>Fibra óptica</h4>
+                    <img src="imagens/redes/fibra_optica.png" alt="">
+                    <p> Os cabos de fibra óptica popularizaram-se e hoje tem um papel fundamental
+                        nas telecomunicações, principalmente em ambientes que necessitam de
+                        uma alta largura de banda como é o caso da telefonia, televisão a cabo, entre
+                        outros. A redução do preço da fibra, o alcance e quantidade de dados que é
+                        possível trafegar nela são alguns dos motivos da aceitação e utilização das
+                        fibras ópticas em longas distâncias, bem como, gradativamente nas redes
+                        locais de computadores. 
+                    </p>
+
+                    <p>Uma fibra óptica nada mais é do que uma pequena haste de vidro,
+                        revestida por materiais protetores, que utiliza-se da refração interna total,
+                        para poder transmitir feixes de luz ao longo da fibra por grandes distâncias.
+                        Junta-se a capacidade de transmissão da fibra com o fato da perda ser
+                        mínima em grande parte dos casos. 
+                    </p>
+
+                    <p>Um cabo de fibra óptica é composto por diferentes materiais, conforme
+                        pode ser descrito a seguir, da parte interna para a externa da fibra (SILVA,
+                        2010):
+                    </p>
+
+                    <p> O <b>núcleo</b>, geralmente produzido de vidro, possui em média 125 mícrons
+                        (um décimo de um milímetro aproximadamente), por onde passa a luz
+                        emitida e refletida por toda a fibra. • Casca – geralmente de plástico serve
+                        para revestir a fibra.
+                    </p>
+
+                    <p> A <b>capa</b> é feita de plástico e tem o objetivo de proteger tanto a casca como a
+                        fibra.
+                    </p>
+
+                    <p> As <b>fibras de resistência mecânica</b> servem para preservar o cabo evitando
+                        que o mesmo seja danificado.
+                    </p>
+
+                    <p>O <b>Revestimento externo</b> é a camada de plástico externa que protege os cabos
+                        de fibra óptica internos.
+                    </p>
+
+                    <h4>Tipos de fibra</h4>
+                    <p>Os tipos de fibra óptica são classificados principalmente em fibra
+                        monomodo, multimodo, monocore, multicore e fibra óptica plástica.
+                    </p>
+
+                    <ul>
+                        <li>A <b>fibra monomodo</b> possui um núcleo estreito, de 8 a 10 micrômetros, e
+                            permite que a luz viaje em um único feixe, o que reduz a atenuação e a
+                            dispersão, tornando-a ideal para longas distâncias e altas velocidades, como
+                            em redes metropolitanas e conexões intercontinentais.
+                        </li>
+
+                        <li>Já a <b>fibra multimodo</b>, com núcleo mais largo (50-62,5 micrômetros),
+                            permite múltiplos feixes de luz simultâneos, sendo mais barata e adequada
+                            para curtas distâncias, como em redes locais (LANs) e data centers.
+                        </li>
+
+                        <li>As fibras também podem ser <b>monocore</b>, com um único núcleo, ou
+                            multicore, que possuem vários núcleos em um único cabo, ampliando a
+                            capacidade de transmissão, principalmente em aplicações experimentais.
+                            Por fim, a fibra óptica plástica, feita de plástico em vez de vidro, é mais
+                            flexível e de custo mais baixo, mas com maior atenuação, sendo usada em
+                            redes domésticas, automação e dispositivos eletrônicos.
+                        </li>
+                    </ul>
+
+                    <h4>Conexão sem fio ou wireless</h4>
+                    <p>As redes de transmissão e comunicação sem-fio, também conhecidas como
+                        wireless, são, sem dúvida, uma grande alternativa aos meios de transmissão
+                        cabeados (par trançado e fibra óptica), pois se utilizam do ar para enviar e
+                        receber sinais de comunicação.
+                    </p>
+
+                    <p>Este tipo de comunicação é útil em situações onde a utilização por meio de
+                        cabos se torna inviável, porém, como qualquer outra tecnologia, apresenta
+                        suas vantagens e desvantagens. Na sequência desse capítulo, abordaremos
+                        algumas tecnologias de transmissão sem-fio, como: rádio, Bluetooth, Wi-Fi,
+                        infravermelho, laser, entre outros.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <h4>Rádio</h4>
+                            <p>A tecnologia via rádio é uma forma de transmissão de dados sem fio que utiliza
+                                ondas de rádio para conectar dispositivos em uma rede. Essa tecnologia é
+                                amplamente utilizada em áreas onde a infraestrutura cabeada é inviável ou
+                                custosa, como zonas rurais e locais de difícil acesso.
+                                <p>Ela funciona transmitindo sinais entre torres ou antenas, podendo cobrir
+                                    grandes distâncias dependendo da frequência utilizada e da potência dos
+                                    equipamentos. Existem diferentes bandas de frequência, como UHF, VHF, e
+                                    micro-ondas, que são usadas para aplicações como telecomunicações, Internet
+                                    banda larga, TV digital e rádio AM/FM
+                                </p>
+            
+                                <p>As vantagens incluem rápida instalação, baixo custo de manutenção e
+                                    flexibilidade para cobrir áreas remotas. No entanto, é suscetível a interferências
+                                    climáticas e limitações de largura de banda em comparação com tecnologias
+                                    mais modernas, como fibra óptica. É uma solução eficiente para comunicação
+                                    em locais sem infraestrutura fixa.
+                                </p>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>Bluetooth</h4>
+                            <p>O Bluetooth é uma tecnologia de transmissão de dados sem-fio, que
+                                permite a comunicação entre computadores, notebooks, smartphones,
+                                mouse, teclado,impressoras, entre outros dispositivos de forma simples e
+                                com um baixo custo, bastando que estes dispositivos estejam em uma
+                                mesma área de cobertura. 
+                            </p>
+                            
+                            <p>A tecnologia Bluetooth (padronizada pela IEEE 802.15) possui
+                                características como: baixo consumo de energia para seu funcionamento e um padrão de comunicação sem-fio para dispositivos que façam uso desta tecnologia. Dessa forma, a comunicação entre estes dispositivos ocorre através de radiofrequência, independente da posição deste dispositivo, desde que o mesmo se encontre dentro de uma mesma área de abrangência dos demais dispositivos que queiram comunicar-se. 
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>Wi-Fi</h4>
+                            <p>O Wi-Fi é uma tecnologia de transmissão sem fio que utiliza ondas de rádio
+                                para conectar dispositivos a redes locais e à Internet. Ele opera principalmente
+                                nas bandas de frequência de 2,4 GHz e 5 GHz, com algumas versões modernas
+                                também utilizando a banda de 6 GHz (Wi-Fi 6E). A transmissão é baseada nos
+                                padrões da família IEEE 802.11, que definem diferentes versões de Wi-Fi, como
+                                802.11n, 802.11ac e 802.11ax (Wi-Fi 6).
+                            </p>
+
+                            <p>O Wi-Fi permite comunicação rápida e eficiente em curtas distâncias, com
+                                taxas de transmissão que podem variar de alguns Mbps a vários Gbps,
+                                dependendo do padrão e das condições de uso. Suas vantagens incluem
+                                mobilidade, facilidade de instalação e integração com dispositivos variados. No
+                                entanto, a qualidade do sinal pode ser afetada por obstáculos físicos,
+                                interferências eletromagnéticas e a quantidade de dispositivos conectados. É
+                                amplamente usado em residências, empresas e espaços públicos para fornecer
+                                acesso rápido e sem fio à Internet.
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article bg-dark-blue">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Internet da coisas (IoT)</h2>
+                    <h4>O que é internet das coisas?</h4>
+
+                    <p>A Internet das Coisas (IoT - Internet of Things) é uma tecnologia que
+                        conecta objetos e dispositivos físicos à internet, permitindo que eles
+                        troquem informações e interajam uns com os outros sem a necessidade de
+                        intervenção humana direta. A IoT utiliza sensores, software e outras
+                        tecnologias para coletar, transmitir e processar dados, tornando os
+                        dispositivos "inteligentes" e capazes de realizar tarefas de forma
+                        automatizada.
+                    </p>
+
+                    <p>Exemplos de dispositivos IoT incluem eletrodomésticos conectados, como
+                        geladeiras que monitoram seus conteúdos, sistemas de segurança
+                        domésticos com câmeras e sensores de movimento, e até carros que se
+                        comunicam com a infraestrutura para otimizar rotas. Além disso, IoT é
+                        fundamental em áreas como cidades inteligentes, saúde (com dispositivos
+                        médicos que monitoram a saúde dos pacientes em tempo real), agricultura
+                        (com sensores que monitoram a umidade do solo e a saúde das plantações)
+                        e indústria (com sistemas de monitoramento e controle de máquinas e
+                        processos).
+                    </p>
+
+                    <p>A principal vantagem da IoT é a automação e a coleta de dados em tempo
+                        real, que permitem tomar decisões mais informadas, melhorar a eficiência e
+                        proporcionar uma experiência mais personalizada. No entanto, também
+                        apresenta desafios, como questões de segurança e privacidade, já que o
+                        grande volume de dados gerados exige proteção contra acessos não
+                        autorizados.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Modelos de referência ISO/OSI e TCP/IP </h2>
+
+                    <p>O Modelo OSI (Open Systems Interconnection) é uma referência que
+                        descreve como as redes de computadores se comunicam e interagem. Ele é
+                        composto por 7 camadas, cada uma responsável por um aspecto específico
+                        da comunicação de rede. A seguir, uma descrição resumida de cada
+                        camada:
+                    </p>
+
+                    <h4>Camadas do modelo OSI/ISO</h4>
+                    <ul>
+                        <li><b>Camada Física:</b> Responsável pela transmissão dos dados brutos através de
+                            meios físicos, como cabos, fibras ópticas ou ondas de rádio. Ela define as
+                            características do hardware de rede, como voltagem, cabos e conectores.
+                        </li>
+
+                        <li><b>Camada de Enlace de Dados:</b> Garante uma comunicação confiável entre
+                            dispositivos na mesma rede, gerenciando a detecção e correção de erros.
+                            Ela organiza os dados em quadros e cuida da direção do tráfego,
+                            determinando quais dispositivos podem se comunicar.
+                        </li>
+
+                        <li><b>Camad de Rede:</b> Responsável pelo roteamento e endereçamento de
+                            pacotes de dados entre redes diferentes. Ela utiliza endereços IP para
+                            determinar a melhor rota para os dados, garantindo que cheguem ao
+                            destino correto, mesmo em redes complexas.
+                        </li>
+
+                        <li><b>Camada de Transporte:</b> Garante a entrega correta e ordenada dos dados
+                            entre dispositivos finais, segmentando e reagrupando os pacotes, além de
+                            controlar o fluxo de dados e corrigir erros. Protocolos como TCP e UDP
+                            operam nesta camada.
+                        </li>
+
+                        <li><b>Camada de Sessão:</b> Estabelece, gerencia e encerra sessões de
+                            comunicação entre aplicações. Ela é responsável por garantir que a
+                            comunicação seja realizada de forma organizada e que o estado da sessão
+                            seja mantido entre os dispositivos.
+                        </li>
+
+                        <li><b>Camada de Apresentação:</b> Cuida da formatação e codificação dos dados
+                            para que possam ser compreendidos pelo sistema receptor. Isso inclui
+                            compressão, criptografia e conversão de dados entre diferentes formatos.
+                        </li>
+
+                        <li><b>Camada de Aplicação:</b> A camada mais próxima do usuário, onde os
+                            serviços e aplicativos de rede operam. Ela fornece interface para os usuários
+                            e permite a comunicação entre programas e redes, com protocolos como
+                            HTTP, FTP e SMTP.
+                        </li>
+                    </ul>
+
+                    <h4>Modelo TCP/IP</h4>
+                    <p>O Modelo TCP/IP é um conjunto de protocolos que define como os
+                        dispositivos se comunicam na rede. Ele é mais simples que o Modelo OSI e
+                        possui quatro camadas, cada uma responsável por diferentes aspectos da
+                        comunicação. A seguir, uma descrição resumida de cada camada do
+                        modelo TCP/IP:
+                    </p>
+
+                    <h5>Camadas do modelo TCP/IP</h5>
+                    <ul>
+                        <li><b>Camada de Acesso à Rede:</b> Equivalente à combinação das camadas Física e de
+                            Enlace de Dados do modelo OSI, esta camada lida com a transmissão de dados
+                            brutos e o controle de acesso ao meio de comunicação. Ela abrange tudo
+                            relacionado ao hardware da rede e à forma como os dados são fisicamente
+                            transmitidos através do meio (como cabos, rádio, ou fibras ópticas).
+                        </li>
+
+                        <li><b>Camada de Internet:</b> Responsável pelo endereçamento, roteamento e entrega
+                            de pacotes entre redes. A principal função desta camada é garantir que os
+                            pacotes de dados encontrem seu destino, utilizando o Protocolo IP (Internet
+                            Protocol), que define os endereços e as rotas para o envio de dados.
+                        </li>
+
+                        <li><b>Camada de Transporte:</b> Esta camada é responsável pelo controle de fluxo,
+                            segmentação e a entrega dos dados entre os dispositivos finais. Ela utiliza
+                            protocolos como TCP (Transmission Control Protocol), que garante uma entrega
+                            confiável e ordenada dos dados, e UDP (User Datagram Protocol), que oferece
+                            uma entrega mais rápida, mas sem garantia de entrega ou ordem.
+                        </li>
+
+                        <li><b>Camada de Aplicação:</b> A camada mais alta do modelo TCP/IP, onde os
+                            aplicativos de rede operam. Ela abrange diversos protocolos de comunicação,
+                            como HTTP (HyperText Transfer Protocol) para navegação web, FTP (File Transfer
+                            Protocol) para transferências de arquivos, e SMTP (Simple Mail Transfer Protocol)
+                            para envio de e-mails. Essa camada lida com as interfaces e interações
+                            diretamente entre os usuários e os sistemas.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article bg-dark-blue">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Classificação das redes e suas topologias </h2>
+
+                    <h4>Redes pessoais (PAN)</h4>
+                    <p>As redes pessoais, ou PANs (Personal Area Networks), permitem que
+                        dispositivos se comuniquem pelo alcance de uma pessoa. Um exemplo
+                        comum é uma rede sem fio que conecta um computador com seus periféricos.
+                        Quase todo computador tem monitor, teclado, mouse e impressora
+                        conectados. Sem usar tecnologia sem fio, essa conexão deve ser feita com
+                        cabos. 
+                    </p>
+
+                    <h4>Redes locais (LAN)</h4>
+                    <p>A próxima etapa é a rede local, ou LAN (Local Area Network). Uma LAN é uma
+                        rede particular que opera dentro e próximo de um único prédio, como uma
+                        residência, um escritório ou uma fábrica. As LANs são muito usadas para
+                        conectar computadores pessoais e aparelhos eletrônicos, para permitir que
+                        compartilhem recursos (como impressoras) e troquem informações. Quando as
+                        LANs são usadas pelas empresas, elas são chamadas redes empresariais. As
+                        LANs sem fo são muito populares atualmente, especialmente nas residências,
+                        prédios de escritórios mais antigos e outros lugares onde a instalação de cabos
+                        é muito trabalhosa. 
+                    </p>
+
+                    <h4>Redes metropolitanas (MAN)</h4>
+                    <p>Uma rede metropolitana, ou MAN (Metropolitan Area Network), abrange uma
+                        cidade. O exemplo mais conhecido de MANs é a rede de televisão a cabo
+                        disponível em muitas cidades. Esses sistemas cresceram a partir de antigos
+                        sistemas de antenas comunitárias usadas em áreas com fraca recepção
+                    </p>
+
+                    <h4>Redes a longa distância (WAN)</h4>
+                    <p>Uma rede a longa distância, ou WAN (Wide Area Network), abrange uma
+                        grande área geográfica, com frequência um país ou continente. Vamos
+                        começar nossa discussão com as WANs conectadas por fios, usando o exemplo
+                        de uma empresa com filiais em diferentes cidades. 
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-article">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Topologia de rede</h2>
+                    <p>Uma topologia de rede tem o objetivo de descrever como é estruturada uma
+                        rede de computadores, tanto fisicamente como logicamente. A topologia física
+                        demonstra como os computadores estão dispersos na rede (aparência física da
+                        rede). Já a topologia lógica demonstra como os dados trafegam na rede (fluxo
+                        de dados entre os computadores que compõe a rede), saõ classificadas em:
+                    </p>
+
+                    <h4>Barramento</h4>
+                    <img src="imagens/redes/barramento.png" alt="">
+                    <p>Na topologia em barramento todos os computadores trocam informações
+                        entre si através do mesmo cabo, sendo este utilizado para a transmissão de
+                        dados entre os computadores. Este tipo de topologia é utilizado na
+                        comunicação ponto-a-ponto. De acordo com Silva (2010), as vantagens da
+                        topologia em barramento são:
+                    </p>
+
+                    <ul>
+                        <li>Estações de trabalho compartilham do mesmo cabo.</li>
+                        <li>São de fácil instalação.</li>
+                        <li>Utilizam pouca quantidade de cabo.</li>
+                        <li>Possui baixo custo e grande facilidade de ser implementada em lugares
+                            pequenos.</li>
+                    </ul>
+
+                    <p>Como desvantagens deste tipo de topologia, está o fato de que
+                        somente um computador pode transmitir informações por vez. Caso mais de
+                        uma estação tente transmitir informações ao mesmo tempo, temos uma
+                        colisão de pacotes. Cada vez que uma colisão acontece na rede é necessário
+                        que o computador reenvie o pacote. Esta tentativa de reenvio do pacote
+                        acontece várias vezes, até que o barramento esteja disponível para a
+                        transmissão e os dados cheguem até o computador receptor. Outras devantagens
+                        a serem levadas em conta:
+                    </p>
+
+                    <ul>
+                        <li>Problemas no cabo afetam diretamente todos os computadores desta rede.</li>
+                        <li>Velocidade da rede variável, conforme a quantidade de computadores ligados
+                            ao barramento.</li>
+                        <li>Gerenciamento complexo (erros e manutenção da rede).</li>
+                    </ul>
+
+                    <h4>Anel</h4>
+                    <img src="imagens/redes/anel.png" alt="">
+                    <p>Uma rede em anel corresponde ao formato que a rede possui. Neste caso,
+                        recebem esta denominação pois os dispositivos conectados na rede
+                        formam um circuito fechado, no formato de um anel (ou círculo). Neste tipo
+                        de topologia os dados são transmitidos unidirecional mente, ou seja, em
+                        uma única direção, até chegar ao computador destino. Desta forma, o sinal
+                        emitido pelo computador.
+                    </p>
+
+                    <p>Sua origem passa por diversos outros computadores, que retransmitem este
+                        sinal até que o mesmo chegue ao computador destino. Vale lembrar aqui
+                        que cada computador possui seu endereço que é identificado por cada
+                        estação que compõe a rede em anel. Como vantagens desta topologia, estão:
+                    </p>
+
+                    <ul>
+                        <li>Inexistência de perda do sinal, uma vez que ele é retransmitido ao passar
+                            por um computador da rede.</li>
+                        <li>dentificação de falhas no cabo é realizada de forma mais rápida que na
+                            topologia em barra mento.</li>
+                        <li></li>
+                    </ul>
+
+                    <p>Apesar vantagens valiosas, essa topologia apresenta desvantagens assim como
+                        as demais. Dentre estas, estão:
+                    </p>
+
+                    <ul>
+                        <li>Atraso no processamento de dados, conforme estes dados passam por
+                            estações diferentes do computador destino.</li>
+                        <li>Confiabilidade diminui conforme aumenta o numero de computadores na
+                            rede.</li>
+                    </ul>
+
+                    <h4>Estrela</h4>
+                    <img src="imagens/redes/estrela.png" alt="">
+                    <p>Uma rede em estrela possui esta denominação, pois faz uso de um
+                        concentrador na rede. Um concentrador nada mais é do que um dispositivo
+                        (hub, switch ou roteador) que faz a comunicação entre os computadores
+                        que fazem parte desta rede. Dessa forma, qualquer computador que queira
+                        trocar dados com outro computador da mesma rede, deve enviar esta
+                        informação ao concentrador para que o mesmo faça a entrega dos dados. Algumas de suas
+                        vantagens são:
+                    </p>
+
+                    <ul>
+                        <li>Fácil identificação de falhas em cabos.</li>
+                        <li>Instalação de novos computadores ligados a rede, ocorre de forma mais
+                            simples que em outras topologias.</li>
+                        <li>Origem de uma falha (cabo, porta do concentrador ou cabo) é mais
+                            simples de ser identificada e corrigida.</li>
+                        <li> Ocorrência de falhas de um computador da rede não afeta as demais
+                            estações ligadas ao concentrador.</li>
+                    </ul>
+
+                    <p>Como destavantagens ligadas a essa topologia, estão:</p>
+                    <ul>
+                        <li>Custo de instalação aumenta proporcionalmente a distância do
+                            computador ao concentrador da rede.</li>
+                        <li>Caso de falha no concentrador afeta toda a rede conectada a ele.</li>
+                    </ul>
+
+                    <h4>Malha</h4>
+                    <img src="imagens/redes/malha.png" alt="">
+                    <p>A topologia em malha refere-se a uma rede de computadores onde cada
+                        estação de trabalho está ligada a todas as demais diretamente. Dessa
+                        forma, é possível que todos os computadores da rede, possam trocar
+                        informações diretamente com todos os demais, sendo que a informação
+                        pode ser transmitida da origem ao destino por diversos caminhos. Como
+                        vantagens podemos citar:
+                    </p>
+
+                    <ul>
+                        <li>Tempo de espera reduzido (devido a quantidade de canais de
+                            comunicação).</li>
+                        <li>Problemas na rede não interferem no funcionamento dos demais.</li>
+                    </ul>
+
+                    <p>Há, além disso, algumas desvantagens nessa topologia:</p>
+                    <ul>
+                        <li>Complexidade de instalação e configuração, devido ao grande número de conexões necessárias.</li>
+                        <li>Custo elevado, pois requer mais cabos e portas de rede.</li>
+                        <li>Manutenção mais difícil, já que a falha de um cabo pode afetar várias conexões.</li>
+                    </ul>
+
+                    <h4>Árvore</h4>
+                    <img src="imagens/redes/arvore.png" alt="">
+                    <p>Neste tipo de topologia um concentrador interliga todos os computadores de
+                        uma rede local, enquanto outro concentrador interliga as demais redes,
+                        fazendo com que um conjunto de redes locais (LAN) sejam interligadas e
+                        dispostas no formato de árvore. 
+                    </p>
+                    <p>Como vantagens dessa topologia, podemos citar:</p>
+                    <ul>
+                        <li>Fácil expansão da rede, permitindo adicionar novos dispositivos sem afetar a estrutura existente.</li>
+                        <li>Facilidade de gerenciamento e manutenção, pois a falha em um segmento não afeta toda a rede.</li>
+                        <li>Hierarquia clara, facilitando a organização e o controle do tráfego de dados.</li>
+                    </ul>
+
+                    <p>As desvantagens incluem:</p>
+                    <ul>
+                        <li>Dependência dos concentradores principais, cuja falha pode afetar grandes partes da rede.</li>
+                        <li>Custo elevado de instalação e manutenção devido à complexidade da estrutura.</li>
+                        <li>Maior latência em comparação com outras topologias, devido ao número de saltos necessários para alcançar alguns dispositivos.</li>
+                    </ul>
+
+                    <h4>Híbrida</h4>
+                    <img src="imagens/redes/hibrida.png" alt="">
+                    <p>Este tipo de topologia é aplicada em redes maiores que uma LAN. É chamada
+                        de topologia híbrida pois pode ser formada por diferentes tipos de topologia,
+                        ou seja, é formada pela união, por exemplo de uma rede em barramento e uma
+                        rede em estrela, entre outras. </p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="section-article bg-dark-blue">
+            <div class="container">
+                <article class="block-content">
+                    <h2 class="title">Referências</h2>
+                    <ul>
+                        <li><a href="https://www.gerenciatec.com.br/topologia-de-rede/">https://www.gerenciatec.com.br/topologia-de-rede/</a></li>
+                        <li><a href="https://www.canalti.com.br/redes-de-computadores/tipos-de-redes-lan-
+                            wan-man-ran-pan-wwan-wman-can-san/">https://www.canalti.com.br/redes-de-computadores/tipos-de-redes-lan-
+                            wan-man-ran-pan-wwan-wman-can-san/</a></li>
+                        <li><a href="https://www.dltec.com.br/blog/redes/guia-definitivo-para-o-entender-o-
+                            protocolo-tcp-ip/">https://www.dltec.com.br/blog/redes/guia-definitivo-para-o-entender-o-
+                            protocolo-tcp-ip/</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
