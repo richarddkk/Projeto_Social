@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
@@ -22,37 +23,128 @@ body {
     font-size: 3rem;
 }
 
+.content, .arduino, .pratico {
+    padding: 2rem;
+    color: white;
+}
+
 .content {
     background-color: #262294; /* Fundo escuro do texto */
-    color: #fff;
-    padding: 2rem;
 }
 
-.content h2 {
+.content h2, .arduino h2, .pratico h2 .tinkercad h2 .codigo h2 .programação_projetos h2{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.content p {
-    margin-bottom: 1rem;
+.content p, .arduino p, .pratico p .tinkercad p .codigo p .programação_projetos p{
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-.content .example {
-    font-weight: bold;
+.arduino {
+    background-color: #4C1FB0; /* Fundo arroxeado */
 }
 
-.arduino{
-    background-color: #4C1FB0;
-    color:white;
+.pratico {
+    background-color: #4b0082; /* Fundo adicional */
+}
+
+.pratico pre {
+    background-color: #333399;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.tinkercad {
+    background-color: #3B1B89; /* Fundo roxo escuro */
+    color: white;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
-.arduino h2 {
+.tinkercad h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-.arduino p{
+
+.tinkercad h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.tinkercad ul, .tinkercad ol {
+    margin-left: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.tinkercad li {
+    margin-bottom: 0.5rem;
     font-size: 1rem;
-}   
+}
+
+.codigo {
+    background-color: #262294; /* Fundo azul escuro */
+    color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.codigo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.copy-button {
+    background-color: #5C22C2; /* Roxo escuro */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #3B1B89; /* Roxo mais claro */
+}
+
+.code-block {
+    background-color: #3B1B89; /* Fundo roxo */
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.programação_projetos {
+    background-color: #3B1B89; /* Fundo roxo escuro */
+    color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+
+.programação_projetos h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.programação_projetos ul, .programação_projetos ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.programação_projetos li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}

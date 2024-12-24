@@ -26,7 +26,6 @@
             Sistemas embarcados são dispositivos projetados para executar funções específicas, como
             controladores em carros, termostatos e relógios digitais.
         </p>
-
         <h3>Conexão entre Hardware e Software</h3>
         <p>
             O hardware (sensores, atuadores) capta informações ou realiza ações no ambiente físico.
@@ -39,22 +38,21 @@
         </p>
     </div>
 
+    <!-- Arduino -->
     <div class="arduino">
         <h2>2. O que é o Arduino?</h2>
         <h3>Plataforma de Protótipos</h3>
         <p>
-        Arduino é uma ferramenta poderosa para aprender eletrônica e programação.
-        Exemplo de aplicação: Controlar LEDs, motores e sensores para criar projetos interativos.
+            Arduino é uma ferramenta poderosa para aprender eletrônica e programação.
+            Exemplo de aplicação: Controlar LEDs, motores e sensores para criar projetos interativos.
         </p>
-        <br>
         <h3>Componentes do Arduino Uno</h3>
         <p>
-        Pinos Digitais (D0-D13): Entrada/saída para sinais digitais (ex.: ligar/desligar LEDs).
-        Pinos Analógicos (A0-A5): Leitura de valores analógicos, como sensores de temperatura.
-        Microcontrolador: Onde o código é executado.
-        Fonte de Alimentação: Conexão por USB ou pino de alimentação externa.
+            Pinos Digitais (D0-D13): Entrada/saída para sinais digitais (ex.: ligar/desligar LEDs).<br>
+            Pinos Analógicos (A0-A5): Leitura de valores analógicos, como sensores de temperatura.<br>
+            Microcontrolador: Onde o código é executado.<br>
+            Fonte de Alimentação: Conexão por USB ou pino de alimentação externa.
         </p>
-
         <h2>3. Conceitos Básicos de Eletrônica</h2>
         <h3>Componentes Comuns</h3>
         <p>LED: Emite luz ao ser energizado.
@@ -63,8 +61,107 @@
         Servo Motor: Gira para posições específicas baseado em sinais de controle.
         </p>
     </div>
+
+    <!-- Prático -->
     <div class="pratico">
-        
+        <h2>Exemplo Prático no Tinkercad: Acender um LED com um Resistor</h2>
+        <ul>
+            <li>1. Acesse e crie um novo circuito.</li>
+            <li>2. Adicione um Arduino Uno, um LED e um resistor de 220 ohms.</li>
+            <li>3. Conecte:
+                <ul>
+                    <li>O ânodo (perna longa) do LED ao pino 13 do Arduino.</li>
+                    <li>O cátodo ao resistor e depois ao GND.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Código no Arduino IDE:</h3>
+        <pre>
+void setup() {
+    pinMode(13, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(13, HIGH); // Liga o LED
+    delay(1000);            // Espera 1 segundo
+    digitalWrite(13, LOW);  // Desliga o LED
+    delay(1000);            // Espera 1 segundo
+}
+        </pre>
     </div>
+    <div class="tinkercad">
+        <h2>4. Primeiros Passos com o Arduino</h2>
+        <h3>Configurando no Tinkercad</h3>
+        <ul>
+            <li>1. Crie uma conta e inicie um circuito no Tinkercad.</li>
+            <li>2. Arraste o Arduino e outros componentes necessários.</li>
+            <li>3. Simule códigos diretamente na plataforma sem precisar de hardware físico.</li>
+        </ul>
+        <h2>5. Montando Circuitos Simples</h2>
+        <h3>Exemplo 1: Controle de Brilho do LED com Potenciômetro</h3>
+        <ol>
+            <li>1. Conecte um potenciômetro aos pinos VCC, GND e A0 do Arduino.</li>
+            <li>2. Ligue um LED ao pino 9 com um resistor.</li>
+        </ol>
+    </div>
+
+
+    <div class="codigo">
+        <h3>Código:</h3>
+        <pre class="code-block" id="code-block">
+    <code>
+    int potPin = A0;      // Pino do potenciômetro
+    int ledPin = 9;       // Pino do LED
+    int value;            // Armazena o valor lido
+    
+    void setup() {
+        pinMode(ledPin, OUTPUT);
+    }
+    
+    void loop() {
+        value = analogRead(potPin);       // Lê o valor do potenciômetro
+        analogWrite(ledPin, value / 4);  // Ajusta o brilho (0-255)
+    }
+    </code>
+        </pre>
+        <button class="copy-button" onclick="copyCode()">Copiar Código</button>
+    </div>
+
+    <div class="programação_projetos">
+        <h2>6. Programação com Arduino IDE</h2>
+        <h3>Estrutura do código</h3>
+        <ul>
+            <li>1. setup(): Configurações iniciais, como definir pinos de entrada ou saída.</li>
+            <li>2. loop(): Executa repetidamente enquanto o Arduino está ligado.</li>
+        </ul>
+        <h3>Dicas</h3>
+        <ul>
+            <li>. Use comentários (//) para descrever o que o código faz.</li>
+            <li>. Teste o código em partes pequenas para depurar erros mais facilmente.</li>
+        </ul>
+        <h2>7. Projetos Básicos para Prática</h2>
+        <h3>Projeto 1: Semáforo com LEDs</h3>
+        <ol>
+            <li>Componentes: 3 LEDs (vermelho, amarelo e verde), resistores.<br>Circuito no Tinkercad:</li>
+            <li>1. Conecte os LEDs aos pinos 2, 3 e 4 do Arduino.</li>
+        </ol>
+    </div>
+
 </body>
+
+
+<script>
+    function copyCode() {
+        // Seleciona o conteúdo do bloco de código
+        const codeBlock = document.getElementById('code-block').innerText;
+
+        // Copia para a área de transferência
+        navigator.clipboard.writeText(codeBlock).then(() => {
+            alert('Código copiado para a área de transferência!');
+        }).catch(err => {
+            console.error('Erro ao copiar o código:', err);
+        });
+    }
+</script>
+
 </html>
