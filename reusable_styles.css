@@ -1,3 +1,4 @@
+/* #region Estilos padrões/base */
 * {
     margin: 0;
     padding: 0;
@@ -24,14 +25,84 @@
 
 }
 
+/* #endregion */
+
+/* #region Componentes de layout */
+.section-article {
+    background-color: #4C1FB0;
+    color: white;
+    padding: 3rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .container-article {
     display: flex;
     flex-direction: column;
 }
 
 
+.block-content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 700px;
+    height: auto;
+    width: 100%;
+    margin: 2rem 1rem;
+    align-self: center;
+}
+/* #endregion */
+
+/* #region Tipografia */
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    text-align: start;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin-bottom: 20px !important;
+}
+
+h4 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+h5 {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+/* #endregion */
+
+/* #region Utilitários */
+.bg-dark-blue {
+    background-color: #262294;
+}
+/* #endregion */
+
+/* #region Media queries */
 @media (min-width: 1200px) {
     .shrink-xl-50 { /* diminui tamanho do container quando a tela é grande */
         width: 50%;
     }
 }
+/* #endregion */
