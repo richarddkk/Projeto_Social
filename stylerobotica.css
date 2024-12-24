@@ -23,7 +23,7 @@ body {
 }
 
 .content {
-    background-color: #3E2D68; /* Fundo escuro do texto */
+    background-color: #262294; /* Fundo escuro do texto */
     color: #fff;
     padding: 2rem;
 }
@@ -41,3 +41,18 @@ body {
 .content .example {
     font-weight: bold;
 }
+
+.arduino{
+    background-color: #4C1FB0;
+    color:white;
+    padding: 2rem;
+}
+
+.arduino h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.arduino p{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}   
