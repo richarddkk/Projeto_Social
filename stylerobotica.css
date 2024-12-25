@@ -32,12 +32,12 @@ body {
     background-color: #262294; /* Fundo escuro do texto */
 }
 
-.content h2, .arduino h2, .pratico h2 .tinkercad h2 .codigo h2 .programação_projetos h2{
+.content h2, .arduino h2, .pratico h2 .tinkercad h2 .codigo h2 .programação_projetos h2 .projeto1 h2 .projeto2 h2 .projeto3 h2 .codeprojeto3 h2 .Recursos h2{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.content p, .arduino p, .pratico p .tinkercad p .codigo p .programação_projetos p{
+.content p, .arduino p, .pratico p .tinkercad p .codigo p .programação_projetos p .projeto1 p .projeto2 p .projeto3 p .codeprojeto3 p .Recursos p{
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -62,13 +62,9 @@ body {
     background-color: #3B1B89; /* Fundo roxo escuro */
     color: white;
     padding: 2rem;
-    margin-top: 1rem;
+    
 }
 
-.tinkercad h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
 
 .tinkercad h3 {
     font-size: 1.25rem;
@@ -88,8 +84,8 @@ body {
 .codigo {
     background-color: #262294; /* Fundo azul escuro */
     color: white;
-    padding: 2rem;
-    margin-top: 1rem;
+    
+    
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -130,7 +126,8 @@ body {
     background-color: #3B1B89; /* Fundo roxo escuro */
     color: white;
     padding: 2rem;
-    margin-top: 1rem;
+    
+    
 }
 
 
@@ -147,4 +144,35 @@ body {
 .programação_projetos li {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+
+h1 {
+    font-size: 24px;
+  }
+
+  
+.projeto1{
+    background-color: #5C22C2;
+    color: white;
+}
+
+.projeto2 {
+    background-color: #3B1B89;
+    color: white;
+}
+
+.projeto3 {
+    background-color: #5C22C2;
+    color: white;
+}
+
+.codeprojeto3 {
+    background-color: #3B1B89;
+    color: white;
+
+}
+
+.Recursos {
+    background-color: #5C22C2;
+    color: white;
 }
