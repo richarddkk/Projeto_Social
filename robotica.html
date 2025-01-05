@@ -1,82 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylerobotica.css">
-    <link rel="icon" href="./imagens/LOGO EDUCA TECH 1.png" type="image/png">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylerobotica.css" />
+    <link rel="icon" href="./imagens/LOGO EDUCA TECH 1.png" type="image/png" />
     <title>Robotica</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <div class="header">
-        <h1>ROBÓTICA</h1>
+      <h1>ROBÓTICA</h1>
     </div>
 
     <!-- Content -->
     <div class="content">
-        <h2>1. Introdução à Robótica e Sistemas Embarcados</h2>
-        <h3>Definição e Aplicações</h3>
-        <p>
-            Robótica é a área que combina eletrônica, mecânica e programação para criar máquinas que realizam
-            tarefas de forma autônoma ou semi-autônoma. Exemplos: braços robóticos em fábricas, drones, robôs de
-            resgate.
-        </p>
-        <p>
-            Sistemas embarcados são dispositivos projetados para executar funções específicas, como
-            controladores em carros, termostatos e relógios digitais.
-        </p>
-        <h3>Conexão entre Hardware e Software</h3>
-        <p>
-            O hardware (sensores, atuadores) capta informações ou realiza ações no ambiente físico.
-            O software (código) define como o hardware deve se comportar.
-        </p>
-        <p class="example">
-            Exemplos práticos:<br>
-            Um sensor de temperatura envia dados para o Arduino, e o software decide quando ligar um
-            ventilador.
-        </p>
+      <h2>1. Introdução à Robótica e Sistemas Embarcados</h2>
+      <h3>Definição e Aplicações</h3>
+      <p>
+        Robótica é a área que combina eletrônica, mecânica e programação para
+        criar máquinas que realizam tarefas de forma autônoma ou semi-autônoma.
+        Exemplos: braços robóticos em fábricas, drones, robôs de resgate.
+      </p>
+      <p>
+        Sistemas embarcados são dispositivos projetados para executar funções
+        específicas, como controladores em carros, termostatos e relógios
+        digitais.
+      </p>
+      <h3>Conexão entre Hardware e Software</h3>
+      <p>
+        O hardware (sensores, atuadores) capta informações ou realiza ações no
+        ambiente físico. O software (código) define como o hardware deve se
+        comportar.
+      </p>
+      <p class="example">
+        Exemplos práticos:<br />
+        Um sensor de temperatura envia dados para o Arduino, e o software decide
+        quando ligar um ventilador.
+      </p>
     </div>
 
     <!-- Arduino -->
     <div class="arduino">
-        <h2>2. O que é o Arduino?</h2>
-        <h3>Plataforma de Protótipos</h3>
-        <p>
-            Arduino é uma ferramenta poderosa para aprender eletrônica e programação.
-            Exemplo de aplicação: Controlar LEDs, motores e sensores para criar projetos interativos.
-        </p>
-        <h3>Componentes do Arduino Uno</h3>
-        <p>
-            Pinos Digitais (D0-D13): Entrada/saída para sinais digitais (ex.: ligar/desligar LEDs).<br>
-            Pinos Analógicos (A0-A5): Leitura de valores analógicos, como sensores de temperatura.<br>
-            Microcontrolador: Onde o código é executado.<br>
-            Fonte de Alimentação: Conexão por USB ou pino de alimentação externa.
-        </p>
-        <h2>3. Conceitos Básicos de Eletrônica</h2>
-        <h3>Componentes Comuns</h3>
-        <p>LED: Emite luz ao ser energizado.
-        Resistor: Controla a corrente elétrica para proteger componentes.
-        Sensor Ultrassônico: Mede distância através de ondas de som.
-        Servo Motor: Gira para posições específicas baseado em sinais de controle.
-        </p>
+      <h2>2. O que é o Arduino?</h2>
+      <h3>Plataforma de Protótipos</h3>
+      <p>
+        Arduino é uma ferramenta poderosa para aprender eletrônica e
+        programação. Exemplo de aplicação: Controlar LEDs, motores e sensores
+        para criar projetos interativos.
+      </p>
+      <h3>Componentes do Arduino Uno</h3>
+      <p>
+        Pinos Digitais (D0-D13): Entrada/saída para sinais digitais (ex.:
+        ligar/desligar LEDs).<br />
+        Pinos Analógicos (A0-A5): Leitura de valores analógicos, como sensores
+        de temperatura.<br />
+        Microcontrolador: Onde o código é executado.<br />
+        Fonte de Alimentação: Conexão por USB ou pino de alimentação externa.
+      </p>
+      <h2>3. Conceitos Básicos de Eletrônica</h2>
+      <h3>Componentes Comuns</h3>
+      <p>
+        LED: Emite luz ao ser energizado. Resistor: Controla a corrente elétrica
+        para proteger componentes. Sensor Ultrassônico: Mede distância através
+        de ondas de som. Servo Motor: Gira para posições específicas baseado em
+        sinais de controle.
+      </p>
     </div>
 
     <!-- Prático -->
     <div class="pratico">
-        <h2>Exemplo Prático no Tinkercad: Acender um LED com um Resistor</h2>
-        <ul>
-            <li>1. Acesse e crie um novo circuito.</li>
-            <li>2. Adicione um Arduino Uno, um LED e um resistor de 220 ohms.</li>
-            <li>3. Conecte:
-                <ul>
-                    <li>O ânodo (perna longa) do LED ao pino 13 do Arduino.</li>
-                    <li>O cátodo ao resistor e depois ao GND.</li>
-                </ul>
-            </li>
-        </ul>
-        <h3>Código no Arduino IDE:</h3>
-        <pre>
+      <h2>Exemplo Prático no Tinkercad: Acender um LED com um Resistor</h2>
+      <ul>
+        <li>1. Acesse e crie um novo circuito.</li>
+        <li>2. Adicione um Arduino Uno, um LED e um resistor de 220 ohms.</li>
+        <li>
+          3. Conecte:
+          <ul>
+            <li>O ânodo (perna longa) do LED ao pino 13 do Arduino.</li>
+            <li>O cátodo ao resistor e depois ao GND.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Código no Arduino IDE:</h3>
+      <pre>
 void setup() {
     pinMode(13, OUTPUT);
 }
@@ -87,28 +94,31 @@ void loop() {
     digitalWrite(13, LOW);  // Desliga o LED
     delay(1000);            // Espera 1 segundo
 }
-        </pre>
+        </pre
+      >
     </div>
     <div class="tinkercad">
-        <h2>4. Primeiros Passos com o Arduino</h2>
-        <h3>Configurando no Tinkercad</h3>
-        <ul>
-            <li>1. Crie uma conta e inicie um circuito no Tinkercad.</li>
-            <li>2. Arraste o Arduino e outros componentes necessários.</li>
-            <li>3. Simule códigos diretamente na plataforma sem precisar de hardware físico.</li>
-        </ul>
-        <h2>5. Montando Circuitos Simples</h2>
-        <h3>Exemplo 1: Controle de Brilho do LED com Potenciômetro</h3>
-        <ol>
-            <li>1. Conecte um potenciômetro aos pinos VCC, GND e A0 do Arduino.</li>
-            <li>2. Ligue um LED ao pino 9 com um resistor.</li>
-        </ol>
+      <h2>4. Primeiros Passos com o Arduino</h2>
+      <h3>Configurando no Tinkercad</h3>
+      <ul>
+        <li>1. Crie uma conta e inicie um circuito no Tinkercad.</li>
+        <li>2. Arraste o Arduino e outros componentes necessários.</li>
+        <li>
+          3. Simule códigos diretamente na plataforma sem precisar de hardware
+          físico.
+        </li>
+      </ul>
+      <h2>5. Montando Circuitos Simples</h2>
+      <h3>Exemplo 1: Controle de Brilho do LED com Potenciômetro</h3>
+      <ol>
+        <li>1. Conecte um potenciômetro aos pinos VCC, GND e A0 do Arduino.</li>
+        <li>2. Ligue um LED ao pino 9 com um resistor.</li>
+      </ol>
     </div>
 
-
     <div class="codigo">
-        <h3>Código:</h3>
-        <pre class="code-block" id="code-block">
+      <h3>Código:</h3>
+      <pre class="code-block" id="code-block">
     <code>
     int potPin = A0;      // Pino do potenciômetro
     int ledPin = 9;       // Pino do LED
@@ -124,33 +134,47 @@ void loop() {
     }
     </code>
         </pre>
-        <button class="copy-button" onclick="copyCode()">Copiar Código</button>
+      <button class="copy-button" onclick="copyCode()">Copiar Código</button>
     </div>
 
     <div class="programação_projetos">
-        <h2>6. Programação com Arduino IDE</h2>
-        <h3>Estrutura do código</h3>
-        <ul>
-            <li>1. setup(): Configurações iniciais, como definir pinos de entrada ou saída.</li>
-            <li>2. loop(): Executa repetidamente enquanto o Arduino está ligado.</li>
-        </ul>
-        <h3>Dicas</h3>
-        <ul>
-            <li>. Use comentários (//) para descrever o que o código faz.</li>
-            <li>. Teste o código em partes pequenas para depurar erros mais facilmente.</li>
-        </ul>
-        <h2>7. Projetos Básicos para Prática</h2>
-        <h3>Projeto 1: Semáforo com LEDs</h3>
-        <ol>
-            <li>Componentes: 3 LEDs (vermelho, amarelo e verde), resistores.<br>Circuito no Tinkercad:</li>
-            <li>1. Conecte os LEDs aos pinos 2, 3 e 4 do Arduino.</li>
-        </ol>
+      <h2>6. Programação com Arduino IDE</h2>
+      <h3>Estrutura do código</h3>
+      <ul>
+        <li>
+          1. setup(): Configurações iniciais, como definir pinos de entrada ou
+          saída.
+        </li>
+        <li>
+          2. loop(): Executa repetidamente enquanto o Arduino está ligado.
+        </li>
+      </ul>
+      <h3>Dicas</h3>
+      <ul>
+        <li>. Use comentários (//) para descrever o que o código faz.</li>
+        <li>
+          . Teste o código em partes pequenas para depurar erros mais
+          facilmente.
+        </li>
+      </ul>
+      <h2>7. Projetos Básicos para Prática</h2>
+      <h3>Projeto 1: Semáforo com LEDs</h3>
+      <ol>
+        <li>
+          Componentes: 3 LEDs (vermelho, amarelo e verde), resistores.<br />Circuito
+          no Tinkercad:
+        </li>
+        <li>1. Conecte os LEDs aos pinos 2, 3 e 4 do Arduino.</li>
+      </ol>
     </div>
     <div class="projeto1">
-        <h1>Projeto 1 - Semáforo com LEDs</h1>
-        <h2>Componentes: 3 LEDs (vermelho, amarelo e verde), resistores.</h2>
-        <p><strong>Circuito no Tinkercad:</strong><br>1. Conecte os LEDs aos pinos 2, 3 e 4 do Arduino.</p>
-        <pre>
+      <h1>Projeto 1 - Semáforo com LEDs</h1>
+      <h2>Componentes: 3 LEDs (vermelho, amarelo e verde), resistores.</h2>
+      <p>
+        <strong>Circuito no Tinkercad:</strong><br />1. Conecte os LEDs aos
+        pinos 2, 3 e 4 do Arduino.
+      </p>
+      <pre>
     void setup() {
       pinMode(2, OUTPUT); // Vermelho
       pinMode(3, OUTPUT); // Amarelo
@@ -170,20 +194,79 @@ void loop() {
       delay(5000);
       digitalWrite(4, LOW);
     }
-        </pre>
-      </div>
-      <div class="projeto2">
-        <h1>Projeto 2 - Controle de Servo Motor com Potenciômetro</h1> <p>Este projeto conecta um potenciômetro ao Arduino para controlar o ângulo de um servo motor.</p> <h2>Componentes Necessários:</h2> <ul> <li>1 Servo Motor</li> <li>1 Potenciômetro</li> <li>Fios de conexão</li> <li>Arduino Uno</li> </ul> <h2>Circuito no Tinkercad:</h2> <ol> <li> <p>Conecte o potenciômetro:</p> <ul> <li>VCC no pino positivo do potenciômetro.</li> <li>GND no pino negativo.</li> <li>A saída do meio no pino A0 do Arduino.</li> </ul> </li> <li> <p>Conecte o servo motor:</p> <ul> <li>O fio de controle (geralmente laranja) ao pino 9.</li> <li>O fio de energia (vermelho) ao VCC.</li> <li>O fio GND (marrom) ao GND do Arduino.</li> </ul> </li> </ol>
+        </pre
+      >
+    </div>
+    <div class="projeto2">
+      <h1>Projeto 2 - Controle de Servo Motor com Potenciômetro</h1>
+      <p>
+        Este projeto conecta um potenciômetro ao Arduino para controlar o ângulo
+        de um servo motor.
+      </p>
+      <h2>Componentes Necessários:</h2>
+      <ul>
+        <li>1 Servo Motor</li>
+        <li>1 Potenciômetro</li>
+        <li>Fios de conexão</li>
+        <li>Arduino Uno</li>
+      </ul>
+      <h2>Circuito no Tinkercad:</h2>
+      <ol>
+        <li>
+          <p>Conecte o potenciômetro:</p>
+          <ul>
+            <li>VCC no pino positivo do potenciômetro.</li>
+            <li>GND no pino negativo.</li>
+            <li>A saída do meio no pino A0 do Arduino.</li>
+          </ul>
+        </li>
+        <li>
+          <p>Conecte o servo motor:</p>
+          <ul>
+            <li>O fio de controle (geralmente laranja) ao pino 9.</li>
+            <li>O fio de energia (vermelho) ao VCC.</li>
+            <li>O fio GND (marrom) ao GND do Arduino.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
 
-      </div>
+    <div class="projeto3">
+      <h1>Projeto 3 - Robô Seguidor de Linha</h1>
+      <p>
+        Objetivo: Criar um robô que siga uma linha preta em um fundo branco
+        usando sensores infravermelhos.
+      </p>
+      <h2>Componentes Necessários:</h2>
+      <ul>
+        <li>2 Sensores infravermelhos (IR)</li>
+        <li>2 Motores DC</li>
+        <li>1 Driver de motor L298N</li>
+        <li>Arduino Uno</li>
+      </ul>
+      <h2>Circuito no Tinkercad:</h2>
+      <ol>
+        <li><p>Conecte os sensores IR aos pinos digitais (ex.: 2 e 3).</p></li>
+        <li>
+          <p>Conecte os motores ao driver L298N:</p>
+          <ul>
+            <li>Motor esquerdo aos pinos OUT1 e OUT2.</li>
+            <li>Motor direito aos pinos OUT3 e OUT4.</li>
+          </ul>
+        </li>
+        <li>
+          <p>Conecte o driver ao Arduino:</p>
+          <ul>
+            <li>ENA (esquerdo) no pino 10.</li>
+            <li>ENB (direito) no pino 11.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
 
-      <div class="projeto3">
-        <h1>Projeto 3 - Robô Seguidor de Linha</h1> <p>Objetivo: Criar um robô que siga uma linha preta em um fundo branco usando sensores infravermelhos.</p> <h2>Componentes Necessários:</h2> <ul> <li>2 Sensores infravermelhos (IR)</li> <li>2 Motores DC</li> <li>1 Driver de motor L298N</li> <li>Arduino Uno</li> </ul> <h2>Circuito no Tinkercad:</h2> <ol> <li> <p>Conecte os sensores IR aos pinos digitais (ex.: 2 e 3).</p> </li> <li> <p>Conecte os motores ao driver L298N:</p> <ul> <li>Motor esquerdo aos pinos OUT1 e OUT2.</li> <li>Motor direito aos pinos OUT3 e OUT4.</li> </ul> </li> <li> <p>Conecte o driver ao Arduino:</p> <ul> <li>ENA (esquerdo) no pino 10.</li> <li>ENB (direito) no pino 11.</li> </ul> </li> </ol>
-      </div>
-
-      <div class="codeprojeto3"> 
-        <h1>Código no Arduino IDE:</h1> 
-        <pre> int leftSensor = 2; // Sensor esquerdo <br>
+    <div class="codeprojeto3">
+      <h1>Código no Arduino IDE:</h1>
+      <pre> int leftSensor = 2; // Sensor esquerdo <br>
             int rightSensor = 3; // Sensor direito <br>
             int motorLeft = 10; // Motor esquerdo <br>
             int motorRight = 11; // Motor direito <br>
@@ -212,26 +295,71 @@ void loop() {
                         digitalWrite(motorRight, HIGH); <br>
                     }<br>
                  } <br>
-                </pre> <h2>Explicação:</h2> <br>
-                <ul> <li>Sensores infravermelhos detectam a linha preta com menor reflexão de luz.</li> <br>
-                    <li>O robô ajusta os motores para seguir a linha detectada.</li> </ul> 
-                </div>
-                <div class="Recursos"> <h2>8. Recursos e Materiais Adicionais</h2> <h3>Sites Úteis:</h3> <ul> <li><a href="https://www.arduino.cc">Arduino.cc</a>: Site oficial com tutoriais e exemplos de projetos.</li> <li><a href="https://www.tinkercad.com">Tinkercad</a>: Ferramenta online para simular circuitos e códigos.</li> </ul> <h3>Livros Recomendados:</h3> <ul> <li>Arduino Cookbook (Michael Margolis): Uma referência completa para projetos com Arduino.</li> <li>Make: Getting Started with Arduino (Massimo Banzi): Introdução ideal para iniciantes.</li> </ul> <h3>Fóruns e Comunidades:</h3> <ul> <li><a href="https://forum.arduino.cc">Fórum Arduino</a>: Espaço oficial para tirar dúvidas e compartilhar ideias.</li> <li><a href="https://stackoverflow.com">Stack Overflow</a>: Ótimo para dúvidas de programação.</li> </ul> </div>
-</body>
+                </pre>
+      <h2>Explicação:</h2>
+      <br />
+      <ul>
+        <li>
+          Sensores infravermelhos detectam a linha preta com menor reflexão de
+          luz.
+        </li>
+        <br />
+        <li>O robô ajusta os motores para seguir a linha detectada.</li>
+      </ul>
+    </div>
+    <div class="Recursos">
+      <h2>8. Recursos e Materiais Adicionais</h2>
+      <h3>Sites Úteis:</h3>
+      <ul>
+        <li>
+          <a href="https://www.arduino.cc">Arduino.cc</a>: Site oficial com
+          tutoriais e exemplos de projetos.
+        </li>
+        <li>
+          <a href="https://www.tinkercad.com">Tinkercad</a>: Ferramenta online
+          para simular circuitos e códigos.
+        </li>
+      </ul>
+      <h3>Livros Recomendados:</h3>
+      <ul>
+        <li>
+          Arduino Cookbook (Michael Margolis): Uma referência completa para
+          projetos com Arduino.
+        </li>
+        <li>
+          Make: Getting Started with Arduino (Massimo Banzi): Introdução ideal
+          para iniciantes.
+        </li>
+      </ul>
+      <h3>Fóruns e Comunidades:</h3>
+      <ul>
+        <li>
+          <a href="https://forum.arduino.cc">Fórum Arduino</a>: Espaço oficial
+          para tirar dúvidas e compartilhar ideias.
+        </li>
+        <li>
+          <a href="https://stackoverflow.com">Stack Overflow</a>: Ótimo para
+          dúvidas de programação.
+        </li>
+      </ul>
+    </div>
+  </body>
 
-
-<script>
+  <script>
     function copyCode() {
-        // Seleciona o conteúdo do bloco de código
-        const codeBlock = document.getElementById('code-block').innerText;
+      // Seleciona o conteúdo do bloco de código
+      const codeBlock = document.getElementById("code-block").innerText;
 
-        // Copia para a área de transferência
-        navigator.clipboard.writeText(codeBlock).then(() => {
-            alert('Código copiado para a área de transferência!');
-        }).catch(err => {
-            console.error('Erro ao copiar o código:', err);
+      // Copia para a área de transferência
+      navigator.clipboard
+        .writeText(codeBlock)
+        .then(() => {
+          alert("Código copiado para a área de transferência!");
+        })
+        .catch((err) => {
+          console.error("Erro ao copiar o código:", err);
         });
     }
-</script>
-
+  </script>
 </html>
+

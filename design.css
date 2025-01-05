@@ -1,0 +1,104 @@
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+td {
+  vertical-align: top;
+}
+.container {
+  clear: both;
+  width: 100%;
+  height: 95vh;
+  left: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  position: relative; /* Necessário para que os filhos com position: absolute sejam relativos ao contêiner */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.text-content {
+  flex-grow: 1;
+  left: 0;
+  text-align: justify;
+  width: 80%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+    .text-content h1 {
+
+      font-size: clamp(1.5rem, 4vw, 3rem); /* Mínimo de 1.5rem, adaptável até 3rem */
+      color: #80d;
+    }
+
+    .text-content p {
+      font-size: clamp(1rem, 2.5vw, 2rem); /* Mínimo de 1rem, adaptável até 2rem */
+      color: #222222;
+    }
+#manchahome {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 40%);
+  transform-origin: 50% 50%;
+  z-index: -2;
+  rotate: -20deg;
+  width: 60%; /* Adjust percentage as needed */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+}
+
+
+.mancha-cima {
+  position: absolute; /* Permite posicionar a imagem no topo à direita */
+  top: 0; /* Posiciona no topo */
+  right: 10%; /* Ajusta a posição horizontal */
+  width: max(20vw, 20vh); /* Ajusta o tamanho da imagem */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  opacity: 0.61; /* Opcional: Ajusta a opacidade para um efeito sutil */
+}
+.mancha-lado {
+  position: absolute; /* Permite posicionar a imagem no topo à direita */
+  top: 20%; /* Centraliza verticalmente */
+  transform: translate(70%,50%);/* Ajusta a centralização vertical */
+  object-fit: contain;
+  left:0; /* Ajusta a posição horizontal */
+  width: max(20vw, 20vh); /* Ajusta o tamanho da imagem */
+  rotate: 110deg;
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  opacity: 0.8; /* Opcional: Ajusta a opacidade para um efeito sutil */
+}
+@media (min-width: 660px) and (max-width: 999px) {
+    #manchahome {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(25%, 40%);
+      transform-origin: 50% 50%;
+      z-index: -2;
+      rotate: -20deg;
+      width: 80%; /* Adjust percentage as needed */
+      height: auto; /* Set height to auto to maintain aspect ratio */
+    }
+}
+@media (min-width: 0px) and (max-width: 659px) {
+    #manchahome {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(25%, 40%);
+      transform-origin: 50% 50%;
+      z-index: -1;
+      rotate: -20deg;
+      width: 100%; /* Adjust percentage as needed */
+      height: auto; 
+      margin-bottom: 10px; /* Adjust this value as needed *//* Set height to auto to maintain aspect ratio */
+    }
+    
+}
+   

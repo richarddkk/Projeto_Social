@@ -339,26 +339,49 @@ figcaption {
 
 hr {
     color: black;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
 }
 
 footer {
     background-color: #262294;
-    height: 250px;
-    width: 100%;
+    margin: auto;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    width: 90%;
     color: white;
+    font-family: 'montserrat';
+}
+footer .footer-header{
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.footer-info{
+    margin-top: 5vh;
+    width: 70vw;
+}
+.footer-info2{
+    margin-top: 5vh;
+    width: 70vw;
+}
+footer .linha{
+    width: 95%;
     text-align: center;
+    margin: auto;
 }
-
-footer .talk {
-    font-size: 36px;
+.footer-footer{
+    margin-left: 4vw;
+    margin-top: 0;
+    display: flex;
 }
-
-footer .lorem {
-    font-size: 18px;
+.lista-footer{
+    color: white;
 }
-
-footer .finalinha {
-    margin-top: 40px;
+.footer-lista{
+    display: flex;
 }
 
 /* Media Queries para dispositivos móveis e telas menores */
